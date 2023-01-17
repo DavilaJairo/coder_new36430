@@ -15,6 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x:hidden
 }
 .info{
     background-color: black;
@@ -29,7 +30,7 @@ body{
 
 .titulobanner {
     text-align: center;
-    padding-right: 30rem;
+    padding-right: 15rem;
     margin: 12rem;
     
 }
@@ -127,11 +128,11 @@ h2.contenedor__subtitulo {
     background-size:cover;
     display: flex;
     flex-direction: column;
-
     text-align: center;
     font-weight:bolder;
     font-size: 1rem;
     color: black;
+    overflow-x:hidden
 }
 .contenedor__excursiones{
     text-align: left;
@@ -166,8 +167,9 @@ h2.contenedor__subtitulo {
 /*-------------------------------------------------*/
 .main__aloja{
     font-family: 'Raleway', sans-serif;
-    background-color:rgba(227, 229, 230, 0.944);
+    background-color: rgba(255, 255, 255, 0.812);
     color: black;
+    overflow-x:hidden
 }
 .aloja__subtitulo{
     background-color: black;
@@ -216,7 +218,6 @@ h2.contenedor__subtitulo {
     background-color: rgb(236, 230, 230);
     border-radius: 3rem;
 }
-/*------------animaciones-------------------*/
 
 /*-------------------------------------------------*/
 .main__vuelos{
@@ -253,11 +254,11 @@ h2.contenedor__subtitulo {
     display: flex;
     flex-direction:row;
     justify-content: space-around;
-
     font-size: 1rem;
     text-align:center;
     font-weight:bolder;
     color: #fff;
+    overflow-x:hidden
 
 }
 a.li__consultas {
@@ -316,8 +317,53 @@ ul.ul__consultas {
 /*media queries/index*/
 
 
-/*media queries/*/
-@media (max-width:425px) {
+/*--------------------------------------------------------------media queries------------------------------------------------------/*/
+
+/*media queries/contacto*/
+
+@media (min-width:425px) {
+
+    .contacto__subtitulo{
+        margin: 2rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .div__consultas {
+        display: flex;
+        margin: 4rem;
+        flex-direction: column;
+    }
+    .form {
+        width: 100%;
+        max-width: 387px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-control {
+        width: 363px;
+    }
+    .maps {
+        border-radius: 15px;
+        width: 405px;
+        height: 272px;
+    }
+    ul.ul__consultas {
+        list-style: none;
+        padding-top: 1rem;
+    }
+
+/*media queries/Alojamiento*/
+    .h2, h2 {
+    font-size: calc(1rem + .9vw);
+    }
+
+
+
+
+
 
 
 
@@ -353,7 +399,7 @@ ul.ul__consultas {
     }
 /*medias aloja/*/
     .main__aloja{
-        background-color: black;
+        background-color: rgba(255, 255, 255, 0.812);
     }
     .gallery-contenedor{
         grid-template-columns: 1fr,1fr; 
