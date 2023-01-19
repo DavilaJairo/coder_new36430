@@ -6,14 +6,11 @@
 
 /*index style*/
 body{
-    margin: 0;
     font-family: 'Raleway', sans-serif;
     background-image:url(../img/travelaalone.jpg);
     background-size:cover;
     background-attachment:fixed;
     background-position:center;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     overflow-x:hidden
 }
@@ -27,12 +24,18 @@ body{
     padding: 2px;
     display: inline-block;
 }
-
+element.style {
+    font-size: 2rem;
+}
+element.style {
+    background-color: #377072;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
 .titulobanner {
     text-align: center;
     padding-right: 15rem;
-    margin: 12rem;
-    
+    margin: 12rem; 
 }
 .titulo__principal{
     font-size: 5rem;
@@ -55,27 +58,34 @@ body{
     background-color: black;
     color: #fff;
 }
-.imagen__card{
-    margin-top: 6rem;
-    width: 400px;
-}
-.titulo__card{
+.titulo__card {
     font-size: 1.5rem;
-    margin: 5rem;
-    padding: 5rem;
+    font-weight: bold;
+    margin: 3rem;
+    padding: 9rem;
+    padding-top: 2rem;
     background-color: #fff;
     color: black;
+    border-radius: 6rem;
+}
+.imagen__card {
+    margin-top: 11rem;
+    margin-right: 3rem;
+    margin-left: -12rem;
+    width: 341px;
+    border-radius: 4rem;
 }
 .About__card{
     font-size: 3rem;
 }
-.services{
-    margin: 7rem;
+.services {
+    margin: 0rem;
+    margin-top: 1rem;
     background-color: black;
     border-radius: 1rem;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 .card__services{
     padding: 3rem;
@@ -95,6 +105,9 @@ body{
     margin-bottom: 0rem;
     
 }
+.footer__p{
+    margin-top: 0;
+}
 .redes__item{
     width: 20px;
     margin: 2px;
@@ -105,38 +118,34 @@ body{
 /*fin*/
 
 /*parametros de las vistas*/
-.contenedor__p{
-    padding: 1rem;
-    margin: 2rem;
-}
+
 h2.contenedor__subtitulo {
     margin-top: 2rem;
 }
 .div__image{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 1rem;
 }
 .contenedor__p{
     text-align: justify;
+    padding: 2rem;
 }
 
 /*vistas style */
 .main__actividades{
     font-family: 'Raleway', sans-serif;
-    background-color:rgb(244, 228, 228);
-    background-attachment:fixed;
-    background-size:cover;
+    background-color:rgb(250, 249, 249);
     display: flex;
     flex-direction: column;
     text-align: center;
     font-weight:bolder;
     font-size: 1rem;
-    color: black;
+    color: rgb(0, 0, 0);
     overflow-x:hidden
 }
 .contenedor__excursiones{
     text-align: left;
-    background-color: white;
 }
 .act__subtitulo{
     background-color: black;
@@ -232,8 +241,6 @@ h2.contenedor__subtitulo {
 .div__videos{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    padding-top: 1rem;
 }
 .form__vuelos {
     padding: 2rem;
@@ -243,6 +250,10 @@ h2.contenedor__subtitulo {
 .card__vuelos{
     display: flex;
     justify-content: space-evenly;
+}
+.vuelos__parrafo {
+    padding: 2rem;
+    font-size: 1.2rem;
 }
 
 /*-------------------------------------------------*/
@@ -313,16 +324,204 @@ ul.ul__consultas {
     color: #fff;
     cursor: pointer;
 }
-/*fin*/
-/*media queries/index*/
+.footer__Texto{
+    margin-top: 0;
+}
 
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+/*fin*/
 
 /*--------------------------------------------------------------media queries------------------------------------------------------/*/
+@media screen and (max-width:1025px) {
+/*--------------------media queries/index--------------------*/
+.titulobanner {
+    text-align: center;
+    padding-right: 19rem;
+    margin: 5rem;
+}
+.titulo__card {
+    font-size: 1rem;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    color: black;
+}
+.imagen__card {
+    margin-top: 2rem;
+    width: 234px;
+}
+.cochi {
+    padding: 1rem;
+    display: flex;
+    background-color: black;
+    color: #fff;
+}
+.services {
+    display: inline-flex;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    margin: 1rem;
+    margin-left: 14rem;
+    background-color: black;
+    border-radius: 1rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+    justify-content: center;
+}
 
-/*media queries/contacto*/
+/*--------------------media queries/Actividades--------------*/
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 53vh;
+}
+.list__piscina-item {
+    display: none;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    text-align: left;
+    background-color: rgba(18, 102, 121, 0.606);
+    color: white;
+    border-radius: 4rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+.list__piscina {
+    display: flex;
+    margin: 3rem;
+    justify-content: space-around;
+}
+.card{
+    width: 17rem;
+    margin: 1rem;
+}
+.div__image {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    padding: 1rem;
+}
+/*--------------------media queries/alojamiento--------------*/
+/*--------------------media queries/vuelo--------------------*/
+element.style {
+    margin-bottom: 2rem;
+}
+/*--------------------media queries/contactos----------------*/
+}
+/*--------------------------------------------------------------media queries------------------------------------------------------/*/
+@media screen and (max-width:769px) {
+/*--------------------media queries/index--------------------*/
+.titulobanner {
+    text-align: center;
+    padding-right: 11rem;
+    margin: 6rem;
+}
+.titulo__principal {
+    font-size: 3rem;
+    font-weight: bold;
+    background: azure;
+}
+.titulo__principal2 {
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+}    
+.titulo__card {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 3rem;
+    background-color: #fff;
+    color: black;
+    border-radius: 2rem;
+}
+.imagen__card {
+    margin-top: 5rem;
+    margin-left: -4rem;
+    width: 207px;
+    border-radius: 2rem;
+}
 
-@media (min-width:425px) {
+.services {
+    display: inline-flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin: 0rem;
+    margin-left: 13rem;
+    background-color: black;
+    border-radius: 1rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    justify-content: center;
+}
+/*--------------------media queries/Actividades--------------*/
 
+
+
+/*--------------------media queries/alojamiento--------------*/
+
+
+
+/*--------------------media queries/vuelo--------------------*/
+    .main__vuelos{
+        background-color: black;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .card-v {
+        width: 35rem;
+        color: black;
+        text-align: initial;
+        margin: 2rem;
+    }
+    .card__vuelos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form__vuelos {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+/*--------------------media queries/contactos----------------*/
+
+}
+/*--------------------------------------------------------------media queries------------------------------------------------------/*/
+@media screen and (min-width:426px) {
+/*--------------------media queries/index--------------------*/
+
+
+
+/*--------------------media queries/Actividades--------------*/
+
+
+
+/*--------------------media queries/alojamiento--------------*/
+    .h2, h2 {
+        font-size: calc(1rem + .9vw);
+    }
+
+
+/*--------------------media queries/vuelo--------------------*/
+    
+
+
+/*--------------------media queries/contactos----------------*/
     .contacto__subtitulo{
         margin: 2rem;
         padding: 1rem;
@@ -355,76 +554,6 @@ ul.ul__consultas {
         padding-top: 1rem;
     }
 
-/*media queries/Alojamiento*/
-    .h2, h2 {
-    font-size: calc(1rem + .9vw);
-    }
-
-
-
-
-
-
-
 
 }
-@media (max-width:768px) {
 
-/*medias vuelos/*/
-    .main__vuelos{
-        background-color: black;
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    
-    .card-v {
-        width: 35rem;
-        color: black;
-        text-align: initial;
-        margin: 2rem;
-    }
-
-    .card__vuelos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .form__vuelos {
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-/*medias aloja/*/
-    .main__aloja{
-        background-color: rgba(255, 255, 255, 0.812);
-    }
-    .gallery-contenedor{
-        grid-template-columns: 1fr,1fr; 
-        grid-auto-rows: 100px;
-    }
-    .gallery__item:nth-child(1){
-        grid-row-start: span 3 ;
-    }
-    .gallery__item:nth-child(8){
-        grid-row-start: span 2 ;
-    }
-    .gallery__item:nth-child(5){
-        grid-column-start: span 2;
-    }
-
-
-
-    
-}
-@media (max-width:1024px) {
-
-
-    
-}
-    
-
-
-/*media queries*/
