@@ -6,9 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!--estilos bs-->
     
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     
@@ -73,7 +72,7 @@
         <hr>
 
         <div class="card__vuelos">
-            <div class="card" style="width: 19rem;">
+            <div class="card__destinos" style="width: 19rem;">
                 <img src="../img/amsterdan.jpg" class="card-img-top" alt="Amsterdan">
                 <div class="card-body">
                     <h5 class="card-title">Amsterdan</h5>
@@ -89,7 +88,7 @@
                     <a href="#" class="card-link">$342.00</a>
                 </div>
             </div>
-            <div class="card" style="width: 19rem;">
+            <div class="card__destinos" style="width: 19rem;">
                 <img src="../img/paris.jpg" class="card-img-top" alt="paris">
                 <div class="card-body">
                     <h5 class="card-title">Paris</h5>
@@ -105,7 +104,7 @@
                     <a href="#" class="card-link">$250.00</a>
                 </div>
             </div>
-            <div class="card" style="width: 19rem;">
+            <div class="card__destinos" style="width: 19rem;">
                 <img src="../img/singapure.jpg" class="card-img-top" alt="Singapure">
                 <div class="card-body">
                     <h5 class="card-title">Singapure</h5>
@@ -121,7 +120,7 @@
                     <a href="#" class="card-link">$51.360</a>
                 </div>
             </div>
-            <div class="card" style="width: 19rem;">
+            <div class="card__destinos" style="width: 19rem;">
                 <img src="../img/riodejaneiro.jpg" class="card-img-top" alt="rio de janeiro">
                 <div class="card-body">
                     <h5 class="card-title">Rio de Janeiro"</h5>
@@ -144,7 +143,7 @@
         <form class="form__vuelos"> 
             <div class="calendario">
                 <table class="calendario">
-                    <td>Fechas disponibles</td>
+                    <td class="text_v-f">Fechas disponibles</td>
                     <td><input type='date'  name="date" id="date" required></td>
                 </table>
                 <button type="submit" class="btn btn-outline-secondary" input type="submit" value="Reservar ">Reservar</button>
@@ -166,13 +165,15 @@
             <br>
         </form>
 
-        <article class="article__vuelos">
-            <p><strong>Descuentos especiales solo por hoy :</strong> </p>
-            <div class="div__videos">
-                    <div  class="div__v">
-                        <iframe width="500" height="400" src="https://www.youtube.com/embed/PSbnH-dNq2g" title="✈️ Países BARATOS para VIAJAR ⭐️ TOP 15 Destinos Económicos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-                    <div class="div__v" >
-                        <iframe width="500" height="400" src="https://www.youtube.com/embed/2Xz65_767Gg" title="¡Top 10 Lugares Más BELLOS del MUNDO!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        <article class="videos__vuelos">
+            <p><strong>Que esperas para vivir tus sueños , solo se vive una vez !!!</strong> </p>
+            <div class="videos__responsive">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PSbnH-dNq2g" title="✈️ Países BARATOS para VIAJAR ⭐️ TOP 15 Destinos Económicos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                    <h3 class="subtitulo__vuelos"><strong>Descuentos especiales solo por hoy :</strong> </h3>
+                    <div class="ratio ratio-16x9" >
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2Xz65_767Gg" title="¡Top 10 Lugares Más BELLOS del MUNDO!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div> 
             </div>
         </article>
