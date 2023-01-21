@@ -1,3 +1,4 @@
+/*-------reset------*/
 *{
     margin: 0;
     padding: 0;
@@ -6,12 +7,9 @@
 
 /*index style*/
 body{
+    display: flex;
+    flex-direction: column;
     font-family: 'Raleway', sans-serif;
-    background-image:url(../img/travelaalone.jpg);
-    background-size:cover;
-    background-attachment:fixed;
-    background-position:center;
-    min-height: 100vh;
     overflow-x:hidden
 }
 .info{
@@ -20,67 +18,87 @@ body{
     padding: 15px;
     text-align: center;
 }
-.titulobanner {
+
+/*-------portada------*/
+.header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bannerp.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.btn__header{
+    text-decoration: none;
+    padding: 8px 15px;
+    background: rgb(255, 13, 93);
+    border-radius: 30px;
+    color: whitesmoke;
+
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
     text-align: center;
-    padding-right: 15rem;
-    margin: 12rem;
-    margin-bottom: 20rem;
 }
-.titulo__principal{
-    font-size: 5rem;
-    font-weight: bold;
-    background: azure;
+.header-content h2{
+    font-size: 4vmin;
 }
-.titulo__principal2{
-    font-size: 3rem;
-    color: white;
-    background-color: black;
-    border-radius: 2rem;
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgb(255, 13, 93);
+    margin: 10px auto;
+    border-radius: 5px;
 }
-.textcard{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 6rem;
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
-.cochi{
-    display: flex;
-    background-color: black;
-    color: #fff;
+/*-------fin-portada------*//*-------seccion/eventos------*/
+.eventos{
+    width: 80%;
+    margin: 80px auto;
 }
-.titulo__card {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 3rem;
-    padding: 9rem;
-    padding-top: 2rem;
-    background-color: #fff;
-    color: black;
-    border-radius: 6rem;
-}
-.imagen__card {
-    margin-top: 11rem;
-    margin-right: 3rem;
-    margin-left: -12rem;
-    width: 341px;
-    border-radius: 2rem;
-}
-.About__card{
-    font-size: 3rem;
-}
-.services {
-    margin: 0rem;
-    margin-top: 1rem;
-    background-color: black;
-    border-radius: 1rem;
-    color: rgb(255, 255, 255);
+.eventos__titulo{
     text-align: center;
-    font-weight: bolder;
+    font-size: 4vmin;
+    color:#667183
 }
-.card__services{
-    padding: 3rem;
+.eventos__item{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
+.eventos__item .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eventos .eventos__item {
+margin-top: 50px;
+}
+.eventos__subtitulos{
+    margin-top: 3vmin;
+    color: #667183;
+    margin: 20px auto;
+}
+.eventos__p{
+    color: #667183;
+    padding: 0px 40px;
+}
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+.eventos_p {
+    margin: 1rem;
+}
+
 .footer{
     font-size: 0.8rem;
     background-color: black;
@@ -156,6 +174,10 @@ h2.contenedor__subtitulo {
     background-color: rgb(221, 213, 213);
     border-radius: 4rem;
     margin: 7rem;
+}
+.textcard {
+    display: flex;
+    justify-content: space-between;
 }
 /*-------------------------------------------------*/
 .main__aloja{
@@ -328,44 +350,6 @@ p {
 /*--------------------------------------------------------------media queries------------------------------------------------------/*/
 @media screen and (max-width:1025px) {
 /*--------------------media queries/index--------------------*/
-.titulobanner {
-    text-align: center;
-    padding-right: 19rem;
-    margin: 5rem;
-    margin-bottom: 15rem;
-}
-.titulo__card {
-    font-size: 1rem;
-    margin: 2rem;
-    padding: 2rem;
-    padding-right: 11rem;
-    background-color: #fff;
-    color: black;
-}
-.imagen__card {
-    margin-top: 5rem;
-    width: 145px;
-}
-.cochi {
-    padding: 1rem;
-    display: flex;
-    background-color: black;
-    color: #fff;
-}
-.services {
-    display: inline-flex;
-    padding-left: 11rem;
-    padding-right: 11rem;
-    margin: 1rem;
-    margin-left: 14rem;
-    background-color: black;
-    border-radius: 1rem;
-    color: #fff;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3rem;
-    justify-content: center;
-}
 
 /*--------------------media queries/Actividades--------------*/
 .carousel-inner {
@@ -411,51 +395,7 @@ element.style {
 /*--------------------------------------------------------------media queries------------------------------------------------------/*/
 @media screen and (max-width:769px) {
 /*--------------------media queries/index--------------------*/
-.titulobanner {
-    text-align: center;
-    padding-right: 11rem;
-    margin: 6rem;
-}
-.titulo__principal {
-    font-size: 3rem;
-    font-weight: bold;
-    background: azure;
-}
-.titulo__principal2 {
-    font-size: 2rem;
-    color: white;
-    background-color: black;
-}    
-.titulo__card {
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin: 1rem;
-    padding: 3rem;
-    background-color: #fff;
-    color: black;
-    border-radius: 2rem;
-}
-.imagen__card {
-    margin-top: 5rem;
-    margin-left: -4rem;
-    width: 207px;
-    border-radius: 2rem;
-}
 
-.services {
-    display: inline-flex;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    margin: 0rem;
-    margin-left: 13rem;
-    background-color: black;
-    border-radius: 1rem;
-    color: #fff;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 2rem;
-    justify-content: center;
-}
 /*--------------------media queries/Actividades--------------*/
 .carousel-inner {
     position: relative;
@@ -521,64 +461,6 @@ element.style {
 /*--------------------------------------------------------------media queries------------------------------------------------------/*/
 @media screen and (max-width:426px) {
 /*--------------------media queries/index--------------------*/
-.titulobanner {
-    text-align: center;
-    padding-right: 4rem;
-    margin: 5rem;
-    margin-bottom: 10rem;
-}
-.titulo__principal {
-    font-size: 2rem;
-    font-weight: bold;
-    background: azure;
-}
-.titulo__principal2 {
-    font-size: 1rem;
-    color: white;
-    background-color: black;
-}
-.titulo__card {
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin: 1rem;
-    padding: 2.3rem;
-    padding-bottom: 1rem;
-    background-color: #fff;
-    color: black;
-    border-radius: 2rem;
-}
-.cochi {
-    display: flex;
-    background-color: black;
-    color: #fff;
-    padding: 0;
-}
-.imagen__card {
-    margin-top: 1.4rem;
-    margin-left: -7rem;
-    width: 74px;
-    border-radius: 2rem;
-}
-.services {
-    display: inline-flex;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    margin: 0rem;
-    margin-left: 6rem;
-    background-color: black;
-    border-radius: 0rem;
-    color: #fff;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    justify-content: center;
-}
-.card__services {
-    padding: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
 
 
 /*--------------------media queries/Actividades--------------*/
@@ -654,6 +536,16 @@ element.style {
         padding-top: 1rem;
     }
 
+}
+
+/*--------------------------------------------------------------media queries------------------------------------------------------/*/
+@media screen and (max-width:321px){
+/*--------------------media queries/index--------------------*/
+body{
+    border: red 5px solid;
+}
 
 }
+
+
 
