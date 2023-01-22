@@ -10,7 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
-    overflow-x:hidden
+    overflow-x:hidden;
 }
 .info{
     background-color: black;
@@ -30,7 +30,7 @@ body{
     align-items: flex-end;
     justify-content: center;
 }
-.btn__header{
+.btn__l{
     text-decoration: none;
     padding: 8px 15px;
     background: rgb(255, 13, 93);
@@ -58,15 +58,19 @@ body{
     margin-top: 50px;
     margin-bottom: 30px;
 }
-/*-------fin-portada------*//*-------seccion/eventos------*/
+/*-------fin-portada------*/
+
+/*-------seccion/eventos------*/
 .eventos{
     width: 80%;
     margin: 80px auto;
 }
-.eventos__titulo{
+.titulos{
     text-align: center;
     font-size: 4vmin;
-    color:#667183
+    color:#667183;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 .eventos__item{
     display: flex;
@@ -135,16 +139,19 @@ h2.contenedor__subtitulo {
 }
 
 /*vistas style */
-.main__actividades{
+.main__actividades {
     font-family: 'Raleway', sans-serif;
-    background-color:white;
+    background-color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-weight:bolder;
+    font-weight: bolder;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    overflow-x:hidden
+    overflow-x: hidden;
+    border: red 10px solid;
+    width: 90%;
+    margin: 80px auto;
 }
 .contenedor__excursiones{
     text-align: left;
@@ -180,11 +187,14 @@ h2.contenedor__subtitulo {
     justify-content: space-between;
 }
 /*-------------------------------------------------*/
-.main__aloja{
+.main__aloja {
     font-family: 'Raleway', sans-serif;
-    background-color:white;
+    background-color: white;
     color: black;
-    overflow-x:hidden
+    overflow-x: hidden;
+    border: red 10px solid;
+    width: 90%;
+    margin: 10px auto;
 }
 .aloja__subtitulo{
     background-color: black;
@@ -235,14 +245,17 @@ h2.contenedor__subtitulo {
 }
 
 /*-------------------------------------------------*/
-.main__vuelos{
+.main__vuelos {
     font-family: 'Raleway', sans-serif;
-    background-color:white;
+    background-color: white;
     font-size: 1rem;
-    text-align:center;
-    font-weight:bolder;
+    text-align: center;
+    font-weight: bolder;
     color: black;
     overflow: hidden;
+    border: red 10px solid;
+    width: 90%;
+    margin: 10px auto;
 }
 
 .form__vuelos {
@@ -298,7 +311,6 @@ a.li__consultas {
     margin: 4rem;
 }
 
-
 ul.ul__consultas {
     list-style: none;
     padding-top: 8rem;
@@ -344,6 +356,13 @@ ul.ul__consultas {
 p {
     margin-top: 0;
     margin-bottom: 0rem;
+}
+.titulos-contactos{
+    text-align: center;
+    font-size: 4vmin;
+    color:whitesmoke;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 /*fin*/
 
