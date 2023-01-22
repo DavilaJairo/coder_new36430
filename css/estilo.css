@@ -30,14 +30,6 @@ body{
     align-items: flex-end;
     justify-content: center;
 }
-.btn__l{
-    text-decoration: none;
-    padding: 8px 15px;
-    background: rgb(255, 13, 93);
-    border-radius: 30px;
-    color: whitesmoke;
-
-}
 .header-content{
     margin-bottom: 150px;
     color: whitesmoke;
@@ -46,6 +38,12 @@ body{
 .header-content h2{
     font-size: 4vmin;
 }
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
 .line{
     width: 150px;
     height: 4px;
@@ -53,14 +51,19 @@ body{
     margin: 10px auto;
     border-radius: 5px;
 }
-.header-content h1{
-    font-size: 7vmin;
-    margin-top: 50px;
-    margin-bottom: 30px;
+.btn__l{
+    text-decoration: none;
+    padding: 8px 15px;
+    background: rgb(255, 13, 93);
+    border-radius: 30px;
+    color: whitesmoke;
+
 }
+
 /*-------fin-portada------*/
 
-/*-------seccion/eventos------*/
+
+/*-------------------seccion/eventos--------------------*/
 .eventos{
     width: 80%;
     margin: 80px auto;
@@ -126,9 +129,9 @@ margin-top: 50px;
 .redes:hover{
     color: black;
 }
-/*fin*/
+/*-----------------------fin---------------------------*/
 
-/*parametros de las vistas*/
+/*------------parametros de las vistas-----------------*/
 
 h2.contenedor__subtitulo {
     margin-top: 2rem;
@@ -137,8 +140,21 @@ h2.contenedor__subtitulo {
     text-align: justify;
     padding: 2rem;
 }
+.banner__info{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.banner__subtitulo{
+    font-size: 4vmin;
+}
+.banner__titulo{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+/*--------------------vistas style ---------------------*/
 
-/*vistas style */
 .main__actividades {
     font-family: 'Raleway', sans-serif;
     background-color: white;
@@ -153,22 +169,32 @@ h2.contenedor__subtitulo {
     width: 90%;
     margin: 80px auto;
 }
-.contenedor__excursiones{
-    text-align: left;
-}
-.act__subtitulo{
-    background-color: black;
-    color:white;
-    text-align: center;
-    font-weight:bolder;
-}
 .carousel-inner {
     position: relative;
     width: 100%;
     overflow: hidden;
     height: 90vh;
 }
-
+.nadar__banner1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/banner-nadar.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.excursiones__banner1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/banner_sendero.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
 .list__piscina{
     display: flex;
     justify-content: space-evenly;
@@ -186,7 +212,13 @@ h2.contenedor__subtitulo {
     display: flex;
     justify-content: space-between;
 }
-/*-------------------------------------------------*/
+.excursiones__card{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+/*------------------------------------------------------*/
+
 .main__aloja {
     font-family: 'Raleway', sans-serif;
     background-color: white;
@@ -196,11 +228,15 @@ h2.contenedor__subtitulo {
     width: 90%;
     margin: 10px auto;
 }
-.aloja__subtitulo{
-    background-color: black;
-    color: rgb(182, 210, 225);
-    text-align: center;
-    font-weight:bolder;
+.aloja__banner1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bannerhotel2.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 .gallery-contenedor{
     display: grid;
@@ -232,19 +268,13 @@ h2.contenedor__subtitulo {
 .gallery__item:nth-child(9){
     grid-column-start: span 2;
 }
-.btn-toolbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: #2f5d5d;
-}
 .alojamiento__info{
     font-size: 1rem;
-    background-color: rgb(236, 230, 230);
+    background-color: rgb(207, 203, 203);
     border-radius: 3rem;
 }
+/*------------------------------------------------------*/
 
-/*-------------------------------------------------*/
 .main__vuelos {
     font-family: 'Raleway', sans-serif;
     background-color: white;
@@ -257,11 +287,18 @@ h2.contenedor__subtitulo {
     width: 90%;
     margin: 10px auto;
 }
-
+.vuelos__banner1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/vuelosbanner2.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
 .form__vuelos {
     padding: 2rem;
-    display: flex;
-    justify-content: center;
 }
 .card__vuelos{
     display: flex;
@@ -295,7 +332,8 @@ element.style {
     text-align:center;
     font-weight:bolder;
     color: #fff;
-    overflow-x:hidden
+    overflow-x: hidden;
+    margin: 10px auto;
 
 }
 a.li__consultas {
@@ -341,13 +379,6 @@ ul.ul__consultas {
     width: 90%;
     height: 30px;
     margin: 0.5rem;
-}
-.form button {
-    padding: 0.5em 1em;
-    border: none;
-    background: rgb(32, 60, 60);
-    color: #fff;
-    cursor: pointer;
 }
 .footer__Texto{
     margin-top: 0;

@@ -16,15 +16,15 @@
     <title>Vuelos</title>  
 </head>
 
-<body class="body__vista">
-    <div class="info">
+<body>
+    
+<div class="info">
         <p>SpecialTravel Tu Mejor Opcion Para Vivir Tu Sueño</p>
-    </div>
+</div>
 
-    <navbar class="header-bs" >
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
-            <div class="container-fluid">
+<navbar class="header-bs" >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">SpecialTravel</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,17 +58,25 @@
 
                 </div>
 
-            </div>
+        </div>
+    </nav>
+</navbar>
 
-        </nav>
-    </navbar>
-
-    <main class="main__vuelos">
-        <section class="section__vuelos">
-            <div class="titulos">
+<main class="main__vuelos">
+    <section class="section__vuelos">
+        <div class="titulos">
                 <h1>Destinos de Viajes</h1>
                 <div class="line"></div>
+        </div>
+        <div class="vuelos__banner1">
+            <div class=banner__info>
+                <h2 class="banner__subtitulo">Live Your Dreams</h2>
+                <div class="line"></div>
+                <h1 class="banner__titulo">Welcome To SpecialTravel</h1>
+                <a class="btn__l" href="#">Learn More</a>
             </div>
+        </div>
+
         <article>
             <p class="vuelos__parrafo">Indica el aeropuerto de salida y destino, así como las fechas del vuelo deseado para ver las ofertas de vuelos relevantes.Filtra las diferentes ofertas según tus criterios para encontrar los billetes de avión que coincidan con tus diferentes requisitos.Completa tu búsqueda de vuelos fácilmente reservando un billete de ida y vuelta en uno de los sitios web de SpecialTravel mencionados.</p>
         </article>
@@ -87,8 +95,8 @@
                     <li class="list-group-item">Bar en el hotel</li>
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="card-link">Ver Ofertas</a>
-                    <a href="#" class="card-link">$342.00</a>
+                    <br>
+                    <a class="btn__l" href="#">Ver Ofertas</a>
                 </div>
             </div>
             <div class="card__destinos" style="width: 19rem;">
@@ -103,8 +111,8 @@
                     <li class="list-group-item">Estacionamiento</li>
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="card-link">Ver Ofertas</a>
-                    <a href="#" class="card-link">$250.00</a>
+                    <br>
+                    <a class="btn__l" href="#">Ver Ofertas</a>
                 </div>
             </div>
             <div class="card__destinos" style="width: 19rem;">
@@ -119,8 +127,8 @@
                     <li class="list-group-item">Bar en el hotel</li>
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="card-link">Ver Ofertas</a>
-                    <a href="#" class="card-link">$51.360</a>
+                    <br>
+                    <a class="btn__l" href="#">Ver Ofertas</a>
                 </div>
             </div>
             <div class="card__destinos" style="width: 19rem;">
@@ -135,29 +143,58 @@
                     <li class="list-group-item">Gimnasio</li>
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="card-link">Ver Ofertas</a>
-                    <a href="#" class="card-link">$195.00</a>
+                    <br>
+                    <a class="btn__l" href="#">Ver Ofertas</a>
                 </div>
             </div>
 
 
         </div>
         <hr>
+
         <div class="titulos">
-            <h1>Facturacion</h1>
+            <h1>Consulta</h1>
             <div class="line"></div>
         </div>
+
+        
         <form class="form__vuelos"> 
             <div class="calendario">
                 <table class="calendario">
-                    <td class="text_v-f">Fechas disponibles</td>
-                    <td><input type='date'  name="date" id="date" required></td>
+                    <div class="titulos">
+                        <h5>Fechas Disponibles</h5>
+                        <div class="line"></div>
+                    </div>
+                    <input type='date'  name="date" id="date" required>
                 </table>
-                <button type="submit" class="btn btn-outline-secondary" input type="submit" value="Reservar ">Reservar</button>
+                <br>
+                <button type="submit" class="btn__l" input type="submit" value="Reservar ">Reservar</button>
             </div>
-            <div class="botton">
-                
-                <label for="Metodo de pago">Metodo de pago</label>
+            <div class="titulos">
+                <h5>Destinos Disponibles</h5>
+                <div class="line"></div>
+            </div>
+                <label for="Destinos Disponibles"></label>
+                <select name="Destinos Disponibles" id="DestinosDisponibles">
+                    <option value="Disponibles">Disponibles</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Amsterdan">Amsterdan</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Berlín">Berlín</option>
+                    <option value=" NewYork">NewYork</option>
+                    <option value="Londres">Londres</option>
+                    <option value="otros">Otros..</option>
+                </select>
+                <button type="submit" class="btn__l" input type="submit" value="Seleccionar ">Seleccionar</button>
+                <button type="reset" class="btn__l"  value="Pasajeros">Pasajeros</button>
+            <br>
+            <div class="titulos">
+                <h5>Metodo de pago</h5>
+                <div class="line"></div>
+            </div>
+                <label for="Metodo de pago"></label>
                 <select name="Metodo de pago" id="Metododepago">
                     <option value="#"></option>
                     <option value="Mercado Pago">Mercado Pago</option>
@@ -166,9 +203,8 @@
                     <option value="Efectivo">Efectivo</option>
                     <option value="otros">Otros..</option>
                 </select>
-                <button type="submit" class="btn btn-outline-secondary" input type="submit" value="Comprar ">Viajar</button>
-                <button type="reset" class="btn btn-outline-secondary"  value="Limpiar formulario">reset</button>
-            </div>
+                <button type="submit" class="btn__l" input type="submit" value="Comprar ">Viajar</button>
+                <button type="reset" class="btn__l"  value="Limpiar formulario">Limpiar</button>
             <br>
         </form>
         <hr>
@@ -186,10 +222,10 @@
                     </div> 
             </div>
         </article>
-        </section>
-    </main>
+    </section>
+</main>
 
-    <footer class="footer">
+<footer class="footer">
     <div class="footer__redes">
             <a href="#"><img class="redes__item" src="../img/facebook_icon-icons.com_53612.svg"alt="logo de facebook"></a>
             <a href="#"><img class="redes__item" src="../img/instagram.svg" alt="logo de instagram"></a>
@@ -199,9 +235,9 @@
         <div class="footer__Texto">
             <p>SpecialTravel 2022-2023 | Diseñado por JDAVILA - Todos los derechos reservados.</p>
         </div>
-    </footer>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 </html>
