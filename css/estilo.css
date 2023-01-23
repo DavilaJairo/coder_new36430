@@ -307,9 +307,7 @@ element.style {
 /*-------------------------------------------------*/
 .main__contactos{
     font-family: 'Raleway', sans-serif;
-    background-image: url(../img/contactos.jpg);
-    background-attachment:fixed;
-    background-size:cover;
+    background-color: rgb(62, 62, 62);
     display: flex;
     flex-direction:row;
     justify-content: space-around;
@@ -318,6 +316,9 @@ element.style {
     font-weight:bolder;
     color: #fff;
     overflow-x: hidden;
+    border: 5px rgb(255, 13, 93) solid; 
+    width: 90%;
+    margin: 10px auto;
 
 }
 a.li__consultas {
@@ -325,7 +326,7 @@ a.li__consultas {
     color: white;
 }
 .ul__consultas :hover{
-    color: black;
+    color:rgb(255, 13, 93);
 }
 .div__consultas {
     display: flex;
@@ -338,7 +339,7 @@ ul.ul__consultas {
     padding-top: 8rem;
 }
 .pregunta{
-    color: black;
+    color:rgb(255, 13, 93);
     font-weight:bolder;
     font-size: 2rem;
 }
@@ -565,16 +566,13 @@ main{
     text-align: justify;
     padding: 1rem;
 }
-
 .excursiones__card {
     display: flex;
     justify-content: center;
-    margin: -5rem;
     flex-direction: column;
     align-items: center;
-    padding-top: 6rem;
+    padding-top: 0rem;
 }
-
 /*--------------------media queries 320px/contactos--------------------*/
 .form {
     width: 70%;
@@ -591,9 +589,9 @@ h1.contactos__titulos {
     margin-bottom: 1rem;
 }
 .maps {
-    border-radius: 16px;
-    width: 285px;
-    height: 185px;
+    border-radius: 8px;
+    width: 246px;
+    height: 132px;
 }
 /*--------------------media queries 320px/vuelos--------------------*/
 .main__vuelos{
