@@ -17,9 +17,6 @@ body{
     padding: 15px;
     text-align: center;
 }
-.navbar {
-    background-color: transparent !important;
-}
 /*------------------------portada------------------------*/
 .header{
     width: 100vw;
@@ -159,19 +156,13 @@ h2.contenedor__subtitulo {
     font-size: 1rem;
     color: rgb(0, 0, 0);
     overflow-x: hidden;
-    border: red 10px solid;
     width: 90%;
     margin: 80px auto;
 }
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 90vh;
-}
+
 .nadar__banner1{
-    width: 89vw;
-    height: 100vh;
+    width: 88vw;
+    height: 110vh;
     background-image: url(../img/banner-nadar.jpg);
     background-position: bottom;
     background-size: cover;
@@ -180,8 +171,8 @@ h2.contenedor__subtitulo {
     justify-content: center;
 }
 .excursiones__banner1{
-    width: 89vw;
-    height: 100vh;
+    width: 88vw;
+    height: 110vh;
     background-image: url(../img/banner_sendero.jpg);
     background-position: bottom;
     background-size: cover;
@@ -219,13 +210,12 @@ h2.contenedor__subtitulo {
     background-color: white;
     color: black;
     overflow-x: hidden;
-    border: red 10px solid;
     width: 90%;
     margin: 10px auto;
 }
 .aloja__banner1{
-    width: 100vw;
-    height: 100vh;
+    width: 88vw;
+    height: 110vh;
     background-image: url(../img/bannerhotel2.jpg);
     background-position: bottom;
     background-size: cover;
@@ -262,7 +252,7 @@ h2.contenedor__subtitulo {
     grid-column-start: span 2;
 }
 .gallery__item:nth-child(9){
-    grid-column-start: span 2;
+    grid-column-start: span 3;
 }
 .alojamiento__info{
     font-size: 1rem;
@@ -279,13 +269,12 @@ h2.contenedor__subtitulo {
     font-weight: bolder;
     color: black;
     overflow: hidden;
-    border: red 10px solid;
     width: 90%;
     margin: 10px auto;
 }
 .vuelos__banner1{
-    width: 89vw;
-    height: 100vh;
+    width: 88vw;
+    height: 110vh;
     background-image: url(../img/vuelosbanner2.jpg);
     background-position: bottom;
     background-size: cover;
@@ -397,12 +386,6 @@ p {
 /*--------------------media queries/index--------------------*/
 
 /*--------------------media queries/Actividades--------------*/
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 61vh;
-}
 .list__piscina {
     display: flex;
     margin: 3rem;
@@ -411,7 +394,6 @@ p {
 .card {
     margin: 1rem;
 }
-
 /*--------------------media queries/alojamiento--------------*/
 /*--------------------media queries/vuelo--------------------*/
 /*--------------------media queries/contactos----------------*/
@@ -421,12 +403,7 @@ p {
 /*--------------------media queries/index--------------------*/
 
 /*--------------------media queries/Actividades--------------*/
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 67vh;
-}
+
 
 /*--------------------media queries/alojamiento--------------*/
 
@@ -463,6 +440,10 @@ p {
 
 
 /*--------------------media queries/Actividades--------------*/
+.main__actividades{
+    width: 90%;
+    margin: 3px auto;
+}
 .textcard {
     display: flex;
     margin-bottom: 3rem;
@@ -482,7 +463,12 @@ p {
     margin-top: 50px;
     margin-bottom: 30px;
 }
-
+.excursiones__card {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    flex-direction: column;
+}
 /*--------------------media queries/alojamiento--------------*/
     .h2, h2 {
         font-size: calc(1rem + .9vw);
@@ -494,7 +480,9 @@ p {
     padding: 2rem;
     padding-top: 1rem;
 }
-
+.form__vuelos {
+    margin-top: -7rem;
+}
 
 /*--------------------media queries/contactos----------------*/
     .contacto__subtitulo{
@@ -531,31 +519,39 @@ p {
 
 }
 
+
 /*--------------------------------------------------------------media queries------------------------------------------------------/*/
 @media screen and (max-width:321px){
-/*--------------------media queries/index--------------------*/
-.main__actividades {
-    width: 90%;
-    margin: 13px auto;
+/*--------------------media queries 320px/index--------------------*/
+main{
     font-size: 0.5rem;
+}
+.header {
+    width: 100vw;
+    height: 80vh;
 }
 .banner__titulo {
     font-size: 5vmin;
     margin-top: 50px;
     margin-bottom: 30px;
 }
-
-
-/*--------------------media queries/Actividades--------------------*/
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 36vh;
-}
-.main__actividades{
+/*--------------------media queries 320px/Actividades--------------------*/
+.main__actividades {
     width: 90%;
-    margin: 13px auto;
+    margin: 25px auto;
+    font-size: 0.5rem;
+    overflow: hidden;
+}
+.nadar__banner1 {
+    width: 88vw;
+    height: 52vh;
+}
+.excursiones__banner1 {
+    width: 88vw;
+    height: 52vh;
+}
+.banner__info {
+    margin-bottom: 46px;
 }
 .btn__l {
     text-decoration: none;
@@ -569,12 +565,7 @@ p {
     text-align: justify;
     padding: 1rem;
 }
-.alojamiento__info {
-    font-size: 0.5rem;
-    margin: 0rem;
-    background-color: rgb(207, 203, 203);
-    border-radius: 3rem;
-}
+
 .excursiones__card {
     display: flex;
     justify-content: center;
@@ -584,7 +575,7 @@ p {
     padding-top: 6rem;
 }
 
-/*--------------------media queries/contactos--------------------*/
+/*--------------------media queries 320px/contactos--------------------*/
 .form {
     width: 70%;
     max-width: 366px;
@@ -599,14 +590,37 @@ h1.contactos__titulos {
     margin: 4rem;
     margin-bottom: 1rem;
 }
-/*--------------------media queries/vuelos--------------------*/
+.maps {
+    border-radius: 16px;
+    width: 285px;
+    height: 185px;
+}
+/*--------------------media queries 320px/vuelos--------------------*/
 .main__vuelos{
     font-size: 0.5rem;
+}
+.vuelos__banner1{
+    width: 88vw;
+    height: 52vh;
 }
 .gallery-contenedor {
     padding-top: 0px;
 }
 .form__vuelos {
     padding: 0px;
+}
+/*--------------------media queries 320px /aloja--------------------*/
+.gallery-contenedor {
+    padding-top: 18px;
+}
+.aloja__banner1{
+    width: 88vw;
+    height: 52vh;
+}
+.alojamiento__info {
+    font-size: 0.5rem;
+    margin: 0rem;
+    background-color: rgb(207, 203, 203);
+    border-radius: 3rem;
 }
 }
