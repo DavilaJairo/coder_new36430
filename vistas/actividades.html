@@ -3,31 +3,33 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Raleway:wght@100;400&display=swap" rel="stylesheet"> 
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+
+    <!--estilo CSS-->
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
     <link rel="shortcut icon" type="" href="../img/logosolapa.jpg">
     <title>Actividades</title>  
 </head>
 
-<body >
-
-<div class="info">
-        <p>SpecialTravel la Mejor Opcion Para Vivir Tu Sueño</p>
+<body>
+<!------publicidad----->
+<div class="body__info">
+    <p class="body__p">SpecialTravel la Mejor Opcion Para Vivir Tu Sueño</p>
 </div>
-
+<!------NavBar----->
 <navbar class="header-bs" >
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">SpecialTravel</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -55,12 +57,9 @@
                     </ul>
 
                 </div>
-
             </div>
-
-        </nav>
+    </nav>
 </navbar>
-
 <!------portada/carrusel----->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -82,63 +81,12 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-
-<div id="carouselactividades" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselactividades" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselactividades" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselactividades" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../img/travel1.jpg" class="d-block w-100" alt="globos aeroestaticos">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Vive tus sueños que nadie te dentenga.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/canoa.jpg" class="d-block w-100" alt="paseo en canoa">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Recorre y explora todo el mundo.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/travel2.png" class="d-block w-100" alt="lugares del mundo">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Haz la travesia mas grandiosa de la vida.</p>
-                </div>
-            </div>
-        </div>
-        
-        <button class="carousel-control-prev" type="button"data-bs-target="#carouselactividades" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselactividades" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-</div>-->
-
+</div>
+<!---Cont/Principal--->
 <main class="main__actividades">
-    <div class="contenedor__actividades">
+<!---seccion-Contenedor--->
+<section class="contenedor">
+        <article class="contenedor__actividades">
         <div class="titulos">
                 <h2>Paseos En Bicis</h2>
                 <div class="line"></div>
@@ -169,8 +117,8 @@
                     </div>
             </div>
         </section>
-    </div>    
-    <div class="contenedor__nadar">
+        </article>    
+        <article  class="contenedor__nadar">
         <div class="titulos">
             <h2>Resort</h2>
             <div class="line"></div>
@@ -212,8 +160,8 @@
             </div>
             </div>
         </div>
-    </div>
-    <div class="contenedor__excursiones">
+        </article>
+        <article class="contenedor__excursiones">
         <div class="titulos">
                 <h2>Excursiones al aire libre</h2>
                 <div class="line"></div>
@@ -252,20 +200,22 @@
                         </div>
             </div>
         </section>
-    </div>
+        </article >
+</section>
 </main> 
-
+<!------Footer------->
 <footer class="footer">
     <div class="footer__redes">
-        <a href="#"><img class="redes__item" src="../img/facebook_icon-icons.com_53612.svg"alt="logo de facebook"></a>
-        <a href="#"><img class="redes__item" src="../img/instagram.svg" alt="logo de instagram"></a>
-        <a href="#"><img class="redes__item" src="../img/twitter.png" alt="logo de twitter"></a>
-        <a href="#"><img class="redes__item" src="../img/whatsapp.svg" alt="logo de whatsapp"></a>
+        <a class="footer__a" href="#"><img class="footer__item" src="../img/facebook_icon-icons.com_53612.svg"alt="logo de facebook"></a>
+        <a class="footer__a" href="#"><img class="footer__item" src="../img/instagram.svg" alt="logo de instagram"></a>
+        <a class="footer__a" href="#"><img class="footer__item" src="../img/twitter.png" alt="logo de twitter"></a>
+        <a class="footer__a" href="#"><img class="footer__item" src="../img/whatsapp.svg" alt="logo de whatsapp"></a>
     </div>
     <div class="footer__Texto">
-        <p>SpecialTravel 2022-2023 | Diseñado por JDAVILA - Todos los derechos reservados.</p>
+        <p class="footer__p">SpecialTravel 2022-2023 | Diseñado por JDAVILA - Todos los derechos reservados.</p>
     </div>
 </footer>
-
+<!------Script JS------->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body></html>
+</body>
+</html>

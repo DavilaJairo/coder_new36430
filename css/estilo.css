@@ -4,20 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*---------------------index style-----------------------*/
-body{
+/*-----------------------Index --------------------------*/
+.body{
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     overflow-x:hidden;
 }
-.info{
+.body__info{
     background-color: black;
     color: #fff;
-    padding: 15px;
+    padding: 11px;
     text-align: center;
 }
-/*------------------------portada------------------------*/
+.body__p{
+    font-size: 0.7rem;
+}
+/*-------------------Index/Portada------------------------*/
 .header{
     width: 100vw;
     height: 100vh;
@@ -28,102 +31,74 @@ body{
     align-items: flex-end;
     justify-content: center;
 }
-.header-content{
+.header__content{
     margin-bottom: 150px;
     color: whitesmoke;
     text-align: center;
 }
-.header-content h2{
+.header__h2{
     font-size: 4vmin;
 }
-.header-content h1{
+.header__h1{
     font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
 }
-
-.line{
-    width: 150px;
-    height: 4px;
-    background: rgb(255, 13, 93);
-    margin: 10px auto;
-    border-radius: 5px;
-}
-.btn__l{
-    text-decoration: none;
-    padding: 8px 15px;
-    background: rgb(255, 13, 93);
-    border-radius: 30px;
-    color: whitesmoke;
-
-}
-/*-------------------seccion/eventos--------------------*/
-.eventos{
+/*-------------------Index/eventos---------------------*/
+.section{
     width: 80%;
     margin: 80px auto;
 }
-.titulos{
+.section__titulos{
     text-align: center;
     font-size: 4vmin;
     color:#667183;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-.eventos__item{
+.section__item{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-top: 50px;
 }
-.eventos__item .col {
+.section__col{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.eventos .eventos__item {
-margin-top: 50px;
-}
-.eventos__subtitulos{
+.section__h4{
     margin-top: 3vmin;
     color: #667183;
     margin: 20px auto;
 }
-.eventos__p{
+.section__ph4{
     color: #667183;
     padding: 0px 40px;
-}
-.responsive-img {
-    width: 100%;
-    height: auto;
-}
-.eventos_p {
     margin: 1rem;
 }
-/*-----------------------footer---------------------------*/
+/*-----------------------footer--------------------------*/
 .footer{
     font-size: 0.8rem;
     background-color: black;
     color: #fff;
     text-align: center;
-    padding: 0%;
+    padding: 1px;
     margin-top: auto; 
 }
-.footer__texto-pie{
-    margin-top: 0;
-    margin-bottom: 0rem;
-    
+.footer__item{
+    width: 20px;
+    margin: 2px;
 }
 .footer__p{
     margin-top: 0;
 }
-.redes__item{
-    width: 20px;
-    margin: 2px;
+.footer__redes :hover{
+    color:rgb(255, 13, 93);
 }
-.redes:hover{
-    color: black;
-}
-/*------------parametros de las vistas-----------------*/
+/*------------------Funciones/ vistas--------------------*/
+
 h2.contenedor__subtitulo {
     margin-top: 2rem;
 }
@@ -143,6 +118,31 @@ h2.contenedor__subtitulo {
     font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
+}
+.titulos{
+    text-align: center;
+    font-size: 4vmin;
+    color:#667183;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgb(255, 13, 93);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.btn__l{
+    text-decoration: none;
+    padding: 8px 15px;
+    background: rgb(255, 13, 93);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.responsive-img {
+    width: 100%;
+    height: auto;
 }
 /*--------------------vistas style ---------------------*/
 
@@ -260,7 +260,6 @@ h2.contenedor__subtitulo {
     border-radius: 3rem;
 }
 /*------------------------------------------------------*/
-
 .main__vuelos {
     font-family: 'Raleway', sans-serif;
     background-color: white;
@@ -321,37 +320,14 @@ element.style {
     margin: 10px auto;
 
 }
-a.li__consultas {
-    text-decoration: none;
-    color: white;
+.section-contactos__titulos{
+    text-align: center;
+    font-size: 4vmin;
+    color:whitesmoke;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
-.ul__consultas :hover{
-    color:rgb(255, 13, 93);
-}
-.div__consultas {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 4rem;
-}
-
-ul.ul__consultas {
-    list-style: none;
-    padding-top: 8rem;
-}
-.pregunta{
-    color:rgb(255, 13, 93);
-    font-weight:bolder;
-    font-size: 2rem;
-}
-.maps{
-    border-radius: 15px;
-    width: 700px;
-    height: 350px;
-}
-.form-control{
-    width: 500px;
-}
-.form{
+.section-contactos__form{
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -360,33 +336,42 @@ ul.ul__consultas {
     justify-content: center;
     align-items: center;
 }
-.form input {
-    width: 90%;
-    height: 30px;
-    margin: 0.5rem;
+.section-contactos__mb-3 {
+    width: 400px;
 }
-.footer__Texto{
-    margin-top: 0;
+.section-contactos__maps {
+    padding: 10rem;
+    padding-top: 2rem;
 }
+.section-contactos__consultas {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.section-contactos__li {
+    text-decoration: none;
+    color: white;
+}
+.section-contactos__ul :hover{
+    color:rgb(255, 13, 93);
+}
+.section-contactos__pregunta{
+    color:rgb(255, 13, 93);
+    font-weight:bolder;
+    font-size: 2rem;
+}
+.section-contactos__ul {
+    list-style: none;
+    padding: 0;
+}
+/*-----------------------@MEDIAS/1025-----------------------*/
+@media screen and (max-width:1025px){
+/*------------------------index-----------------------------*/
 
-p {
-    margin-top: 0;
-    margin-bottom: 0rem;
-}
-.titulos-contactos{
-    text-align: center;
-    font-size: 4vmin;
-    color:whitesmoke;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-/*fin*/
-
-/*--------------------------------------------------------------media queries------------------------------------------------------/*/
-@media screen and (max-width:1025px) {
-/*--------------------media queries/index--------------------*/
-
-/*--------------------media queries/Actividades--------------*/
+/*------------------------Actividades-----------------------*/
 .list__piscina {
     display: flex;
     margin: 3rem;
@@ -395,22 +380,18 @@ p {
 .card {
     margin: 1rem;
 }
-/*--------------------media queries/alojamiento--------------*/
-/*--------------------media queries/vuelo--------------------*/
-/*--------------------media queries/contactos----------------*/
+/*------------------------alojamiento-----------------------*/
+/*------------------------vuelo-----------------------------*/
+/*------------------------contactos-------------------------*/
 }
-/*--------------------------------------------------------------media queries------------------------------------------------------/*/
+/*-----------------------@MEDIAS/768-----------------------*/
 @media screen and (max-width:769px) {
-/*--------------------media queries/index--------------------*/
-
-/*--------------------media queries/Actividades--------------*/
-
-
-/*--------------------media queries/alojamiento--------------*/
+/*------------------------index-----------------------------*/
+/*------------------------Actividades-----------------------*/
+/*------------------------alojamiento-----------------------*/
 
 
-
-/*--------------------media queries/vuelo--------------------*/
+/*------------------------vuelo-----------------------------*/
     .card__vuelos {
         display: flex;
         flex-direction: column;
@@ -433,12 +414,21 @@ p {
     .card__destinos {
         margin-bottom: 5rem;
     }
-/*--------------------media queries/contactos----------------*/
+/*------------------------contactos-------------------------*/
 }
-/*--------------------------------------------------------------media queries------------------------------------------------------/*/
+/*-----------------------@MEDIAS/425-----------------------*/
 @media screen and (max-width:426px) {
 /*--------------------media queries/index--------------------*/
-
+.section__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.section__col {
+    margin-bottom: 2rem;
+}
 
 /*--------------------media queries/Actividades--------------*/
 .main__actividades{
@@ -474,8 +464,6 @@ p {
     .h2, h2 {
         font-size: calc(1rem + .9vw);
     }
-
-
 /*--------------------media queries/vuelo--------------------*/
 .videos__responsive {
     padding: 2rem;
@@ -484,46 +472,40 @@ p {
 .form__vuelos {
     margin-top: -7rem;
 }
-
 /*--------------------media queries/contactos----------------*/
-    .contacto__subtitulo{
+    .section-contactos__h1{
         margin: 2rem;
         padding: 1rem;
         font-size: 2rem;
     }
-    .div__consultas {
+    .section-contactos__consultas {
         display: flex;
-        margin: 4rem;
         flex-direction: column;
+        margin: 1rem;
+        padding-top: 1rem;
+        font-size: 0.7rem;
     }
-    .form {
-        width: 100%;
+    .img-fluid {
+        max-width: 100%;
+        height: 170px;
+    }
+    .section-contactos__form {
+        width: 80%;
         max-width: 387px;
         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    }
+    .section-contactos__mb-3 {
+        width: 361px;
+        align-content: center;
         align-items: center;
     }
-    .form-control {
-        width: 363px;
+    .section-contactos__maps {
+        padding: 1rem;
     }
-    .maps {
-        border-radius: 15px;
-        width: 405px;
-        height: 272px;
-    }
-    ul.ul__consultas {
-        list-style: none;
-        padding-top: 1rem;
-    }
-
 }
-
-
-/*--------------------------------------------------------------media queries------------------------------------------------------/*/
+/*-----------------------@MEDIAS/320-----------------------*/
 @media screen and (max-width:321px){
-/*--------------------media queries 320px/index--------------------*/
+/*------------------------index-----------------------------*/
 main{
     font-size: 0.5rem;
 }
@@ -536,7 +518,7 @@ main{
     margin-top: 50px;
     margin-bottom: 30px;
 }
-/*--------------------media queries 320px/Actividades--------------------*/
+/*------------------------Actividades-----------------------*/
 .main__actividades {
     width: 90%;
     margin: 25px auto;
@@ -573,8 +555,8 @@ main{
     align-items: center;
     padding-top: 0rem;
 }
-/*--------------------media queries 320px/contactos--------------------*/
-.form {
+/*------------------------contactos-------------------------*/
+.section-contactos__form {
     width: 70%;
     max-width: 366px;
     margin: 0 auto;
@@ -583,17 +565,36 @@ main{
     justify-content: center;
     align-items: center;
 }
-h1.contactos__titulos {
+.section-contactos__titulos {
     font-size: 1.5rem;
-    margin: 4rem;
+    margin: 2rem;
     margin-bottom: 1rem;
 }
-.maps {
-    border-radius: 8px;
-    width: 246px;
-    height: 132px;
+.section-contactos__maps {
+    padding: 05rem;
 }
-/*--------------------media queries 320px/vuelos--------------------*/
+.section-contactos__h1 {
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.section-contactos__consultas {
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+.img-fluid {
+    max-width: 100%;
+    height: 150px;
+}
+.section-contactos__ul {
+    list-style: none;
+    padding: 0;
+}
+.section-contactos__pregunta {
+    font-size: 1rem;
+}
+/*------------------------vuelo-----------------------------*/
 .main__vuelos{
     font-size: 0.5rem;
 }
@@ -607,7 +608,7 @@ h1.contactos__titulos {
 .form__vuelos {
     padding: 0px;
 }
-/*--------------------media queries 320px /aloja--------------------*/
+/*------------------------alojamiento-----------------------*/
 .gallery-contenedor {
     padding-top: 18px;
 }
@@ -622,3 +623,8 @@ h1.contactos__titulos {
     border-radius: 3rem;
 }
 }
+
+
+
+
+

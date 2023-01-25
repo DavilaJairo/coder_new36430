@@ -8,22 +8,23 @@
     <!--bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
-    
+
+    <!--estilo CSS-->
     <link rel="shortcut icon" type="" href="./img/logosolapa.jpg">
     <link rel="stylesheet" href="./css/estilo.css">
     <title>SpecialTtravel</title>
 </head>
 
-<body>
-
-<div class="info">  
-        <p>SpecialTravel Tu Mejor Opcion Para Vivir Tu Sueño</p>
+<body class="body">
+<!------publicidad----->
+<div class="body__info">  
+    <p class="body__p">SpecialTravel Tu Mejor Opcion Para Vivir Tu Sueño...</p>
 </div>
-
+<!--------NavBar------->
 <navbar class="header-bs" >
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">SpecialTravel</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,63 +57,81 @@
                 </div>
 
             </div>
-
         </nav>
 </navbar>
-
-<!------portada----->
+<!--------portada------>
 <header class="header">
-    <div class=header-content>
-        <h2>Live Your Dreams</h2>
+    <div class=header__content>
+        <h2 class="header__h2">Live Your Dreams</h2>
         <div class="line"></div>
-        <h1>Welcome To SpecialTravel</h1>
-        <a class="btn__l" href="#"    >Learn More</a>
+        <h1 class="header__h1">Welcome To SpecialTravel</h1>
+        <a class="btn__l" href="#">Learn More</a>
     </div>
 </header>
-
-<main>
-<!--seccion-eventos-->
-<section class="eventos">
-        <div class="titulos">
+<!---Cont/Principal--->
+<main class="main">
+<!---seccion-eventos--->
+<section class="section">
+    <article class="section__article">
+        <div class="section__titulos">
             <h1>Proximos Eventos</h1>
             <div class="line"></div>
         </div>
-        <div class="eventos__item">
-            <div class="col">
+        <div class="section__item">
+            <div class="section__col">
                 <img src="./img/senderismo11.jpg" alt="senderismo" class="responsive-img">
-                <h4 class="eventos__subtitulos">Senderismo</h4>
-                <p class="eventos_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo.</p>
+                <h4 class="section__h4">Senderismo</h4>
+                <p class="section__ph4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo.</p>
                 <a href="#" class="btn__l">Learn More</a>
             </div>
-            <div class="col">
+            <div class="section__col">
                 <img src="./img/fogata .jpg" alt="fogata en la noche" class="responsive-img" >
-                <h4 class="eventos__subtitulos">Camping</h4>
-                <p class="eventos_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo.</p>
+                <h4 class="section__h4">Camping</h4>
+                <p class="section__ph4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo.</p>
                 <a href="#" class="btn__l">Learn More</a>
             </div>
         </div>
+    </article>
 </section>
-<section>
-        <div>
-
-        </div>
-</section>
-
 </main>
-
+<!-------Footer-------->
 <footer class="footer">
         <div class="footer__redes">
-            <a href="#"><img class="redes__item" src="./img/facebook_icon-icons.com_53612.svg" alt="logo de facebook"></a>
-            <a href="#"><img class="redes__item" src="./img/instagram.svg" alt="logo de instagram"></a>
-            <a href="#"><img class="redes__item" src="./img/twitter.png" alt="logo de twitter"></a>
-            <a href="#"><img class="redes__item" src="./img/whatsapp.svg" alt="logo de whatsapp"></a>
+            <a class="footer__a" href="#"><img class="footer__item" src="./img/facebook_icon-icons.com_53612.svg" alt="logo de facebook"></a>
+            <a class="footer__a" href="#"><img class="footer__item" src="./img/instagram.svg" alt="logo de instagram"></a>
+            <a class="footer__a" href="#"><img class="footer__item" src="./img/twitter.png" alt="logo de twitter"></a>
+            <a class="footer__a" href="#"><img class="footer__item" src="./img/whatsapp.svg" alt="logo de whatsapp"></a>
         </div>
         <div class="footer__Texto">
             <p class="footer__p">SpecialTravel 2022-2023 | Diseñado por JDAVILA - Todos los derechos reservados.</p>
         </div>
 </footer>
-
+<!------Script JS------>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
 </body>
 </html>
+
+<!-- "METODOLOGIA BEM"
+.body
+.body__info
+.body__p
+
+.header
+.header__content
+.header__h2
+.header__h1
+
+.main
+.section
+.section__article
+.section__titulos
+.section__item
+.section__col
+
+.footer
+.footer__redes
+.footer__a
+.footer__item
+.footer__Texto
+.footer__p
+-->
