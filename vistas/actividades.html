@@ -23,7 +23,7 @@
     <p class="body__p">SpecialTravel la Mejor Opcion Para Vivir Tu Sueño</p>
 </div>
 <!------NavBar----->
-<navbar class="header-bs" >
+<navbar class="navbar" >
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">SpecialTravel</a>
@@ -61,69 +61,77 @@
     </nav>
 </navbar>
 <!------portada/carrusel----->
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+<div id="carousel-actividades" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
+    <div class="carousel-item active">
         <img src="../img/deportes1.jpg" class="d-block w-100" alt="deportes">
-      </div>
-      <div class="carousel-item">
-        <img src="../img/deportes2.jpg" class="d-block w-100" alt="deportes">
-      </div>
-      <div class="carousel-item">
-        <img src="../img/deportes3.jpg" class="d-block w-100" alt="deportes">
-      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+    <div class="carousel-item">
+        <img src="../img/deportes2.jpg" class="d-block w-100" alt="deportes">
+    </div>
+    <div class="carousel-item">
+        <img src="../img/deportes3.jpg" class="d-block w-100" alt="deportes">
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-actividades" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-actividades" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
     </button>
 </div>
 <!---Cont/Principal--->
 <main class="main__actividades">
-<!---seccion-Contenedor--->
-<section class="contenedor">
-        <article class="contenedor__actividades">
-        <div class="titulos">
-                <h2>Paseos En Bicis</h2>
-                <div class="line"></div>
+<!---seccion-actividades--->
+<section class="section-actividades">
+
+<!---seccion-actividades--->
+    <article class="section-actividades__paseos">
+        <div class="section-actividades__titulos">
+            <h2>Paseos En Bicis</h2>
+            <div class="line"></div>
         </div>
-        <section class="textcard">
-            <div class="card" style="width: 17rem;">
-                        <img src="../img/ciclismo.jpg" class="card-img-top" alt="imagen de ciclismo"></a>
-                        <div class="card-body">
-                            <p class="card-text">Las actividades recreativas, han adquirido, en los últimos años, una importancia esencial para cualquier sociedad, a partir de sus potencialidades para el desarrollo y perfeccionamiento de la vida humana.</p>
-                            <br>
-                            <a class="btn__l" href="#">Reserva</a>
-                        </div>
+        <section class="section-actividades__paseos-card">
+<!-----seccion-card-------->
+            <div class="section-actividades__paseoscard-item" style="width: 17rem;">
+                <img src="../img/ciclismo.jpg" class="card-img-top" alt="imagen de ciclismo"></a>
+                <div class="card-body">
+                    <p class="card-text">Las actividades recreativas, han adquirido, en los últimos años, una importancia esencial para cualquier sociedad, a partir de sus potencialidades para el desarrollo y perfeccionamiento de la vida humana.</p>
+                    <br>
+                    <a class="btn__l" href="#">Reserva</a>
+                </div>
             </div>
-            <div class="card" style="width: 17rem;">
-                    <img src="../img/mountain-bike.jpg" class="card-img-top" alt="imagen de ciclismo">
-                    <div class="card-body">
-                        <p class="card-text">Al montar en bicicleta permites que tus rodillas y demás articulaciones descansen, ya que no tienen que aguantar el peso del cuerpo, que recae principalmente sobre el sillín cada vez más personas dejan de lado el coche para usar su bicicleta.</p>
-                        <br>
-                        <a class="btn__l" href="#">Reserva</a>
-                    </div>
+<!-----seccion-card-------->
+            <div class="section-actividades__paseoscard-item" style="width: 17rem;">
+                <img src="../img/mountain-bike.jpg" class="card-img-top" alt="imagen de ciclismo">
+                <div class="card-body">
+                    <p class="card-text">Al montar en bicicleta permites que tus rodillas y demás articulaciones descansen, ya que no tienen que aguantar el peso del cuerpo, que recae principalmente sobre el sillín cada vez más personas dejan de lado el coche para usar su bicicleta.</p>
+                    <br>
+                    <a class="btn__l" href="#">Reserva</a>
+                </div>
             </div>
-            <div class="card" style="width: 17rem;">
-                    <img src="../img/familybike.jpg" class="card-img-top" alt="imagen de ciclismo">
-                    <div class="card-body">
-                        <p class="card-text">también sirve de medio para desarrollar conocimientos, habilidades, hábitos, cualidades y provocar emociones, mediante una participación activa y afectiva de los sujetos, por lo que la formación de la personalidad se transforma en una experiencia feliz..</p>
-                        <br>
-                        <a class="btn__l" href="#">Reserva</a>
-                    </div>
+<!-----seccion-card-------->
+            <div class="section-actividades__paseoscard-item" style="width: 17rem;">
+                <img src="../img/familybike.jpg" class="card-img-top" alt="imagen de ciclismo">
+                <div class="card-body">
+                    <p class="card-text">también sirve de medio para desarrollar conocimientos, habilidades, hábitos, cualidades y provocar emociones, mediante una participación activa y afectiva de los sujetos, por lo que la formación de la personalidad se transforma en una experiencia feliz..</p>
+                    <br>
+                    <a class="btn__l" href="#">Reserva</a>
+                </div>
             </div>
         </section>
-        </article>    
-        <article  class="contenedor__nadar">
-        <div class="titulos">
+    </article>
+
+<!------seccion-resort------>
+    <article  class="section-actividades__resort">
+        <div class="section-actividades__titulos">
             <h2>Resort</h2>
             <div class="line"></div>
         </div>
-        <div class="nadar__banner1">
+<!-------seccion-banner------>
+        <div class="section-actividades__resort-banner1">
             <div class=banner__info>
                 <h2 class="banner__subtitulo">Live Your Dreams</h2>
                 <div class="line"></div>
@@ -131,8 +139,9 @@
                 <a class="btn__l" href="#">Learn More</a>
             </div>
         </div>
-        <div class="list__piscina">
-            <div class="card" style="width: 18rem;">
+<!-----------card------------->
+        <div class="section-actividades__resort-card">
+            <div class="section-actividades__resortcardr-item" style="width: 18rem;">
                 <img src="../img/nadar1.jpg" class="card-img-top" alt="Resort Santa Lucía">
                 <div class="card-body">
                 <h5 class="card-title">Resort Santa Lucía</h5>
@@ -141,7 +150,8 @@
                 <a class="btn__l" href="#">Reserva</a>
             </div>
             </div>
-            <div class="card" style="width: 18rem;">
+<!-----------card------------->
+            <div class="section-actividades__resortcardr-item" style="width: 18rem;">
                 <img src="../img/nadar2.jpg" class="card-img-top" alt=" Las Maldivas">
                 <div class="card-body">
                 <h5 class="card-title"> Las Maldivas</h5>
@@ -150,7 +160,8 @@
                 <a class="btn__l" href="#">Reserva</a>
             </div>
             </div>
-            <div class="card" style="width: 18rem;">
+<!-----------card------------->
+            <div class="section-actividades__resortcardr-item" style="width: 18rem;">
                 <img src="../img/nadar3.jpg" class="card-img-top" alt="Suite de aguas">
                 <div class="card-body">
                 <h5 class="card-title">Suite de agua</h5>
@@ -160,26 +171,30 @@
             </div>
             </div>
         </div>
-        </article>
-        <article class="contenedor__excursiones">
-        <div class="titulos">
-                <h2>Excursiones al aire libre</h2>
-                <div class="line"></div>
+    </article>
+
+<!---seccion-excursiones----->
+    <article class="section-actividades__excursiones">
+        <div class="section-actividades__titulos">
+            <h2>Excursiones al aire libre</h2>
+            <div class="line"></div>
         </div>
         <div>
             <p class="contenedor__p">Como en cualquier deporte, practicando senderismo nos ponemos en forma, y al no ser un deporte de altas exigencias, en cada excursión nos podemos ir marcando unas metas que harán que vaya mejorando nuestro estado físico, nuestra resistencia y nuestra capacidad pulmonar. Al ser un deporte aeróbico en el que se activa la circulación, es un ejercicio ideal para prevenir enfermedades cardíacas, y para disminuir la tensión arterial. Además, ayuda a mejorar los niveles de colesterol y la diabetes.</p>
         </div>
-        
-        <div class="excursiones__banner1">
-                <div class=banner__info>
-                        <h2 class="banner__subtitulo">Live Your Dreams</h2>
-                        <div class="line"></div>
-                        <h1 class="banner__titulo">Welcome To SpecialTravel</h1>
-                        <a class="btn__l" href="#">Learn More</a>
-                </div>
+<!-------seccion-banner------>
+        <div class="section-actividades__excursiones-banner1">
+            <div class=banner__info>
+                <h2 class="banner__subtitulo">Live Your Dreams</h2>
+                <div class="line"></div>
+                <h1 class="banner__titulo">Welcome To SpecialTravel</h1>
+                <a class="btn__l" href="#">Learn More</a>
+            </div>
         </div>
-        <section class="excursiones__card">
-            <div class="card" style="width: 17rem;">
+<!-----------card------------->
+        <div class="section-actividades__excursiones-card">
+<!-----------card------------->
+            <div class="section-actividades__excursionescardr-item" style="width: 17rem;">
                         <img src="../img/senderismo2.jpg" class="card-img-top" alt="imagen de senderismo2 ">
                         <div class="card-body">
                                 <p class="card-text">El senderismo suele estar considerado como una actividad más relajante, mientras que el excursionismo se asocia con una mayor demanda física.  Además de esta diferencia, el trekking se suele combinar con otras actividades naturales, como la acampada.</p>
@@ -187,7 +202,8 @@
                                 <a class="btn__l" href="#">Learn More</a>
                         </div>
             </div>
-            <div class="card" style="width: 17rem;">
+<!-----------card------------->
+            <div class="section-actividades__excursionescardr-item" style="width: 17rem;">
                         <img src="../img/senderismo20.jpg" class="card-img-top" alt="imagen de senderismo">
                         <div class="card-body">
                                 <p class="card-text">Inicia la actividad a una hora prudente.
@@ -199,8 +215,9 @@
                                 <a class="btn__l" href="#">Learn More</a>
                         </div>
             </div>
-        </section>
-        </article >
+        </div>
+    </article >
+
 </section>
 </main> 
 <!------Footer------->
@@ -219,3 +236,17 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- "METODOLOGIA BEM" 
+main__actividades
+section-actividades
+section-actividades__titulos
+section-actividades__paseos
+section-actividades__resort
+section-actividades__resort-banner1
+section-actividades__resort-card
+
+section-actividades__excursiones
+
+
+-->

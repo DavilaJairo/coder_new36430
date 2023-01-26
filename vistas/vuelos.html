@@ -23,7 +23,7 @@
     <p class="body__p">SpecialTravel la Mejor Opcion Para Vivir Tu Sueño</p>
 </div>
 <!------NavBar----->
-<navbar class="header-bs" >
+<navbar class="navbar" >
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">SpecialTravel</a>
@@ -64,12 +64,14 @@
 </navbar>
 <!---Cont/Principal--->
 <main class="main__vuelos">
-    <section class="section__vuelos">
-        <div class="titulos">
-                <h1>Destinos de Viajes</h1>
-                <div class="line"></div>
+<!--seccion-vuelos-->
+<section class="section-vuelos">
+        <div class="section-vuelos__titulos">
+            <h1>Destinos de Viajes</h1>
+            <div class="line"></div>
         </div>
-        <div class="vuelos__banner1">
+<!-------seccion-banner------>
+        <div class="section-vuelos__banner1">
             <div class=banner__info>
                 <h2 class="banner__subtitulo">Live Your Dreams</h2>
                 <div class="line"></div>
@@ -78,9 +80,9 @@
             </div>
         </div>
         <hr>
-
-        <div class="card__vuelos">
-            <div class="card__destinos" style="width: 15rem;">
+<!-------seccion-card------>
+        <article class="section-vuelos__card">
+            <div class="section-vuelos__card-destinos" style="width: 15rem;">
                 <img src="../img/amsterdan.jpg" class="card-img-top" alt="Amsterdan">
                 <div class="card-body">
                     <h5 class="card-title">Amsterdan</h5>
@@ -96,7 +98,7 @@
                     <a class="btn__l" href="#">Ver Ofertas</a>
                 </div>
             </div>
-            <div class="card__destinos" style="width: 15rem;">
+            <div class="section-vuelos__card-destinos" style="width: 15rem;">
                 <img src="../img/paris.jpg" class="card-img-top" alt="paris">
                 <div class="card-body">
                     <h5 class="card-title">Paris</h5>
@@ -112,7 +114,7 @@
                     <a class="btn__l" href="#">Ver Ofertas</a>
                 </div>
             </div>
-            <div class="card__destinos" style="width: 15rem;">
+            <div class="section-vuelos__card-destinos" style="width: 15rem;">
                 <img src="../img/singapure.jpg" class="card-img-top" alt="Singapure">
                 <div class="card-body">
                     <h5 class="card-title">Singapure</h5>
@@ -129,62 +131,56 @@
                 </div>
             </div>
 
-        </div>
-
-        <div class="gallery-contenedor">
-            <div class="gallery__item">
-                <img src="../img/paris-vuelo.jpg" alt="ciudad de Paris" class="gallery__img">
-                <h2 class="gallery__title">Paris</h2>
+        </article>
+<!-------seccion-gallery------>
+        <article class="section-vuelos__gallery">
+            <div class="section-vuelos__gallery-item">
+                <img src="../img/paris-vuelo.jpg" alt="ciudad de Paris" class="section-vuelos__gallery-img">
+                <h2 class="section-vuelos__gallery-title">Paris</h2>
+            </div>
+            <div class="section-vuelos__gallery-item">
+                <img src="../img/tokyo.jpg" alt="ciudad de Tokyo" class="section-vuelos__gallery-img">
+                <h2 class="section-vuelos__gallery-title">Tokyo</h2>
+            </div>
+            <div class="section-vuelos__gallery-item">
+                <img src="../img/berlin.jpg" alt="ciudad de Berlin" class="section-vuelos__gallery-img">
+                <h2 class="section-vuelos__gallery-title">Berlin</h2>
+            </div>
+            <div class="section-vuelos__gallery-item">
+                <img src="../img/roma.jpg" alt="ciudad de Roma" class="section-vuelos__gallery-img">
+                <h2 class="section-vuelos__gallery-title">Roma</h2>
+            </div>
+            <div class="section-vuelos__gallery-item">
+                <img src="../img/copacavana.jpg" alt="ciudad de Copacavana" class="section-vuelos__gallery-img">
+                <h2 class="section-vuelos__gallery-title">Copacavana </h2>
+            </div>
+            <div class="section-vuelos__gallery-item">
+                <img src="../img/dubai.jpg" alt="ciudad de Dubai" class="section-vuelos__gallery-img">
+                <h2 class="section-vuelos__gallery-title">Dubai</h2>
+            </div>
+            <div class="section-vuelos__gallery-item">
+                <img src="../img/londres.jpg" alt="ciudad de Londres" class="section-vuelos__gallery-img">
+                <h2 class="section-vuelos__gallery-title">Londres</h2>
+            </div>
+            <div class="section-vuelos__gallery-item">
+                <img src="../img/zurich.jpg" alt="ciudad de Zurich" class="section-vuelos__gallery-img">
+                <h2 class="section-vuelos__gallery-title">Zurich</h2>
+            </div>
+            <div class="section-vuelos__gallery-item">
+                <img src="../img/newyork.jpg" alt="ciudad de NewYork" class="section-vuelos__gallery-img">
+                <h2 class="section-vuelos__gallery-title">NewYork</h2>
             </div>
         
-            <div class="gallery__item">
-                <img src="../img/tokyo.jpg" alt="ciudad de Tokyo" class="gallery__img">
-                <h2 class="gallery__title">Tokyo</h2>
-            </div>
-        
-            <div class="gallery__item">
-                <img src="../img/berlin.jpg" alt="ciudad de Berlin" class="gallery__img">
-                <h2 class="gallery__title">Berlin</h2>
-            </div>
-        
-            <div class="gallery__item">
-                <img src="../img/roma.jpg" alt="ciudad de Roma" class="gallery__img">
-                <h2 class="gallery__title">Roma</h2>
-            </div>
-        
-            <div class="gallery__item">
-                <img src="../img/copacavana.jpg" alt="ciudad de Copacavana" class="gallery__img">
-                <h2 class="gallery__title">Copacavana </h2>
-            </div>
-        
-            <div class="gallery__item">
-                <img src="../img/dubai.jpg" alt="ciudad de Dubai" class="gallery__img">
-                <h2 class="gallery__title">Dubai</h2>
-            </div>
-        
-            <div class="gallery__item">
-                <img src="../img/londres.jpg" alt="ciudad de Londres" class="gallery__img">
-                <h2 class="gallery__title">Londres</h2>
-            </div>
-            <div class="gallery__item">
-                <img src="../img/zurich.jpg" alt="ciudad de Zurich" class="gallery__img">
-                <h2 class="gallery__title">Zurich</h2>
-            </div>
-        
-            <div class="gallery__item">
-                <img src="../img/newyork.jpg" alt="ciudad de NewYork" class="gallery__img">
-                <h2 class="gallery__title">NewYork</h2>
-            </div>
-        
-        </div>
-        <div class="titulos">
-            <h1>Consulta</h1>
+        </article>
+        <div class="section-vuelos__titulos">
+            <h1>Consultas</h1>
             <div class="line"></div>
         </div>
-        <form class="form__vuelos"> 
+<!-------seccion-Form------>
+        <form class="section-vuelos__form"> 
             <div class="calendario">
                 <table class="calendario">
-                    <div class="titulos">
+                    <div class="section-vuelos__titulos">
                         <h5>Fechas Disponibles</h5>
                         <div class="line"></div>
                     </div>
@@ -193,7 +189,7 @@
                 <br>
                 <button type="submit" class="btn__l" input type="submit" value="Reservar ">Reservar</button>
             </div>
-            <div class="titulos">
+            <div class="section-vuelos__titulos">
                 <h5>Destinos Disponibles</h5>
                 <div class="line"></div>
             </div>
@@ -213,7 +209,7 @@
                 <button type="submit" class="btn__l" input type="submit" value="Seleccionar ">Seleccionar</button>
                 <button type="reset" class="btn__l"  value="Pasajeros">Pasajeros</button>
             <br>
-            <div class="titulos">
+            <div class="section-vuelos__titulos">
                 <h5>Metodo de pago</h5>
                 <div class="line"></div>
             </div>
@@ -231,21 +227,20 @@
             <br>
         </form>
         <hr>
-        <article class="videos__vuelos">
-            <div class="videos__responsive">
-                    <div class="ratio ratio-16x9">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PSbnH-dNq2g" title="✈️ Países BARATOS para VIAJAR ⭐️ TOP 15 Destinos Económicos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                    </div>
-                    <div class="titulos">
-                        <h1>TOP 10 Lugares</h1>
-                        <div class="line"></div>
-                    </div>
-                    <div class="ratio ratio-16x9" >
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2Xz65_767Gg" title="¡Top 10 Lugares Más BELLOS del MUNDO!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                    </div> 
+<!-------seccion-videos------>
+        <article class="section-vuelos__videos">
+            <div class="ratio ratio-16x9">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PSbnH-dNq2g" title="✈️ Países BARATOS para VIAJAR ⭐️ TOP 15 Destinos Económicos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
             </div>
+            <div class="section-vuelos__titulos">
+                <h1>TOP 10 Lugares</h1>
+                <div class="line"></div>
+            </div>
+            <div class="ratio ratio-16x9" >
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2Xz65_767Gg" title="¡Top 10 Lugares Más BELLOS del MUNDO!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div> 
         </article>
-    </section>
+</section>
 </main>
 <!------Footer------->
 <footer class="footer">
@@ -263,3 +258,21 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+<!-- "METODOLOGIA BEM"
+.main__vuelos
+.section-vuelos
+.section-vuelos__titulos
+.section-vuelos__banner1
+.section-vuelos__card
+.section-vuelos__card-destinos
+.section-vuelos__gallery
+.section-vuelos__gallery-item
+.section-vuelos__gallery-title
+.section-vuelos__gallery-img
+.section-vuelos__form
+.section-vuelos__videos
+-->
