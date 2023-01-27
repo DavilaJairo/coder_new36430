@@ -9,18 +9,19 @@
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
-    overflow-x:hidden;
 }
-.body__info{
+.body__info {
     background-color: black;
     color: #fff;
-    padding: 11px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     text-align: center;
 }
-.body__p{
-    font-size: 0.7rem;
+.body__p {
+    margin-bottom: 0rem;
+    padding: 15px;
+    font-size: 0.8rem; 
 }
-
 /*-------------------Index/Portada----------------------*/
 .navbar {
     position: relative;
@@ -34,9 +35,31 @@
 nav.navbar.navbar-expand-lg.bg-body-tertiary {
     background-color: transparent ! important;
 }
+.nav-link {
+    --bs-nav-link-color: rgb(255 241 241);
+}
 .navbar-brand {
     color: rgb(255 255 255);
     font-size: 2rem;
+    padding-right: 31rem;
+}
+.navbar-brand {
+    color: rgb(255 255 255);
+    font-size: 2rem;
+}
+.navbar-brand:hover {
+    color: rgb(255 13 93 / 45%);
+}
+.nav-link:hover {
+    color: rgb(255 13 93 / 45%);
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: rgb(255 13 93);
+}
+.navbar-toggler {
+    color: #343a40;
+    background-color: #b02a37;
+    border: var(--bs-border-width) solid rgb(0 0 0 / 13%);
 }
 .header{
     width: 100vw;
@@ -47,6 +70,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    overflow: hidden;
 }
 .header__content{
     margin-bottom: 150px;
@@ -61,7 +85,6 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
     margin-top: 50px;
     margin-bottom: 30px;
 }
-
 /*-------------------Index/eventos---------------------*/
 .section{
     width: 80%;
@@ -85,16 +108,18 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
 }
-.section__h4{
-    margin-top: 3vmin;
+.section__h4 {
     color: #667183;
     margin: 20px auto;
+    font-size: 2rem;
+    font-weight: bold;
 }
-.section__ph4{
-    color: #667183;
-    padding: 0px 40px;
-    margin: 1rem;
+.section__ph4 {
+    color: #000000;
+    padding: 1rem;
+    font-size: 1rem;
 }
 
 /*-----------------------footer-------------------------*/
@@ -110,17 +135,15 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
     width: 20px;
     margin: 2px;
 }
-.footer__p{
-    margin-top: 0;
+.footer__p {
+    margin-top: 0px;
+    margin-bottom: 1rem;
 }
 .footer__redes :hover{
     color:rgb(255, 13, 93);
 }
 
 /*-----------------Funciones/ vistas-------------------*/
-h2.contenedor__subtitulo {
-    margin-top: 2rem;
-}
 .contenedor__p{
     text-align: justify;
     padding: 2rem;
@@ -138,7 +161,7 @@ h2.contenedor__subtitulo {
     margin-top: 50px;
     margin-bottom: 30px;
 }
-.titulos{
+.titulos {
     text-align: center;
     font-size: 4vmin;
     color:#667183;
@@ -162,6 +185,68 @@ h2.contenedor__subtitulo {
 .responsive-img {
     width: 100%;
     height: auto;
+}
+/*--------------ANIMACIONES-----------------*/
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-contract {
+    0% {
+    letter-spacing: 1em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    letter-spacing: normal;
+    opacity: 1;
+    }
+}
+@keyframes tracking-in-contract {
+    0% {
+    letter-spacing: 1em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    letter-spacing: normal;
+    opacity: 1;
+    }
+}
+/* ----------------------------------------*/
+.focus-in-contract {
+	-webkit-animation: focus-in-contract 1s 1s ;
+	animation: focus-in-contract 1s 1s ;
+}
+@-webkit-keyframes focus-in-contract {
+    0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    }
+}
+@keyframes focus-in-contract {
+    0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    }
 }
 
 /*-----------------ESTILOS DE LAS VISTAS-----------------*/
@@ -222,7 +307,6 @@ h2.contenedor__subtitulo {
     justify-content: space-evenly;
     margin: 2rem;
 }
-
 /*------------------------------------------------------*/
 .main__aloja {
     font-family: 'Raleway', sans-serif;
@@ -285,7 +369,6 @@ h2.contenedor__subtitulo {
     background-color: rgb(207, 203, 203);
     border-radius: 3rem;
 }
-
 /*------------------------------------------------------*/
 .main__vuelos {
     font-family: 'Raleway', sans-serif;
@@ -361,7 +444,6 @@ h2.contenedor__subtitulo {
     padding: 10rem;
     padding-top: 1rem;
 }
-
 /*-------------------------------------------------*/
 .main__contactos {
     font-family: 'Raleway', sans-serif;
@@ -379,7 +461,6 @@ h2.contenedor__subtitulo {
     overflow-x: hidden;
     padding: 2rem;
 }
-
 .section-contactos__titulos{
     text-align: center;
     font-size: 4vmin;
@@ -400,8 +481,8 @@ h2.contenedor__subtitulo {
     width: 400px;
 }
 .section-contactos__maps {
-    padding: 10rem;
     padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 .section-contactos__consultas {
     display: flex;
@@ -427,39 +508,18 @@ h2.contenedor__subtitulo {
     list-style: none;
     padding: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------------------@MEDIAS/1025-----------------------*/
 @media screen and (max-width:1025px){
+/*------------------------index-----------------------------*/
+.header {
+    width: 99.5vw;
+    height: 100vh;
+}
+.navbar-brand {
+    color: rgb(255 255 255);
+    font-size: 2rem;
+    padding-right: 14rem;
+}
 /*------------------------Actividades-----------------------*/
 .section-actividades__resort {
     display: flex;
@@ -475,6 +535,21 @@ h2.contenedor__subtitulo {
 }
 /*-----------------------@MEDIAS/768-----------------------*/
 @media screen and (max-width:769px) {
+/*------------------------index-----------------------------*/
+.header {
+        width: 98vw;
+        height: 100vh;
+        overflow: hidden;
+}
+.navbar-brand {
+    color: rgb(255 255 255);
+    font-size: 2rem;
+    padding-right: 28rem;
+}
+.dropdown-menu.show {
+    display: block;
+    width: fit-content;
+}
 /*------------------------vuelo-----------------------------*/
 .section-vuelos__card {
         display: flex;
@@ -500,7 +575,6 @@ element.style {
 }
 
 }
-
 /*-----------------------@MEDIAS/425-----------------------*/
 @media screen and (max-width:426px) {
 /*--------------------media queries/index--------------------*/
@@ -514,10 +588,26 @@ element.style {
 .section__col {
     margin-bottom: 2rem;
 }
+.header {
+    width: 97vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.navbar-brand {
+    color: rgb(255 255 255);
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+.dropdown-menu.show {
+    display: block;
+    width: 100%;
+    background: whitesmoke;
+}
 /*--------------------media queries/Actividades--------------*/
 .main__actividades{
     width: 90%;
     margin: 3px auto;
+    font-size: 1rem;
 }
 .section-actividades__paseos-card{
     display: flex;
@@ -616,7 +706,7 @@ main{
     font-size: 0.5rem;
 }
 .header {
-    width: 100vw;
+    width: 99vw;
     height: 80vh;
 }
 .banner__titulo {
@@ -628,7 +718,7 @@ main{
 .main__actividades {
     width: 90%;
     margin: 0px auto;
-    font-size: 0.5rem;
+    font-size: 1rem;
     overflow: hidden;
 }
 .section-actividades__resort-banner1 {
@@ -692,7 +782,7 @@ main{
     margin-bottom: 1rem;
 }
 .section-contactos__maps {
-    padding: 05rem;
+    padding: 1rem;
 }
 .section-contactos__h1 {
     margin: 2rem;
@@ -708,16 +798,17 @@ main{
     max-width: 100%;
     height: 150px;
 }
-.section-contactos__ul {
-    list-style: none;
-    padding: 0;
-}
 .section-contactos__pregunta {
     font-size: 1rem;
 }
+.section-contactos__ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.8rem;
+}
 /*------------------------vuelo-----------------------------*/
 .main__vuelos{
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 .section-vuelos__banner1{
     width: 88vw;

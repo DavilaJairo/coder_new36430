@@ -8,6 +8,10 @@
     <!--bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     
@@ -20,7 +24,7 @@
 <body>
 <!------publicidad----->
 <div class="body__info">
-    <p class="body__p">SpecialTravel la Mejor Opcion Para Vivir Tu Sueño</p>
+    <p class="body__p slide-in-blurred-right">SpecialTravel la Mejor Opcion Para Vivir Tu Sueño</p>
 </div>
 <!------NavBar----->
 <navbar class="navbar" >
@@ -30,9 +34,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="./actividades.html">Actividades</a>
@@ -43,10 +45,8 @@
                         <li class="nav-item">
                         <a class="nav-link active" href="./vuelos.html">Vuelos</a>
                         </li>
-
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
-
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./contactos.html">Contactos</a></li>
                                 <li><a class="dropdown-item" href="#">Reservas</a></li>
@@ -56,9 +56,7 @@
                         </li>
 
                     </ul>
-
                 </div>
-
         </div>
     </nav>
 </navbar>
@@ -66,23 +64,23 @@
 <main class="main__vuelos">
 <!--seccion-vuelos-->
 <section class="section-vuelos">
-        <div class="section-vuelos__titulos">
+        <div class="section-vuelos__titulos"data-aos="fade-down">
             <h1>Destinos de Viajes</h1>
             <div class="line"></div>
         </div>
 <!-------seccion-banner------>
         <div class="section-vuelos__banner1">
             <div class=banner__info>
-                <h2 class="banner__subtitulo">Live Your Dreams</h2>
+                <h2 class="banner__subtitulo tracking-in-contract">Live Your Dreams</h2>
                 <div class="line"></div>
-                <h1 class="banner__titulo">Welcome To SpecialTravel</h1>
+                <h1 class="banner__titulo tracking-in-contract">Welcome To SpecialTravel</h1>
                 <a class="btn__l" href="#">Learn More</a>
             </div>
         </div>
         <hr>
 <!-------seccion-card------>
         <article class="section-vuelos__card">
-            <div class="section-vuelos__card-destinos" style="width: 15rem;">
+            <div class="section-vuelos__card-destinos" style="width: 15rem;" data-aos="flip-up">
                 <img src="../img/amsterdan.jpg" class="card-img-top" alt="Amsterdan">
                 <div class="card-body">
                     <h5 class="card-title">Amsterdan</h5>
@@ -98,7 +96,7 @@
                     <a class="btn__l" href="#">Ver Ofertas</a>
                 </div>
             </div>
-            <div class="section-vuelos__card-destinos" style="width: 15rem;">
+            <div class="section-vuelos__card-destinos" style="width: 15rem;" data-aos="flip-up">
                 <img src="../img/paris.jpg" class="card-img-top" alt="paris">
                 <div class="card-body">
                     <h5 class="card-title">Paris</h5>
@@ -114,7 +112,7 @@
                     <a class="btn__l" href="#">Ver Ofertas</a>
                 </div>
             </div>
-            <div class="section-vuelos__card-destinos" style="width: 15rem;">
+            <div class="section-vuelos__card-destinos" style="width: 15rem;" data-aos="flip-up">
                 <img src="../img/singapure.jpg" class="card-img-top" alt="Singapure">
                 <div class="card-body">
                     <h5 class="card-title">Singapure</h5>
@@ -133,46 +131,46 @@
 
         </article>
 <!-------seccion-gallery------>
-        <article class="section-vuelos__gallery">
-            <div class="section-vuelos__gallery-item">
+        <article class="section-vuelos__gallery " >
+            <div class="section-vuelos__gallery-item"data-aos="zoom-in">
                 <img src="../img/paris-vuelo.jpg" alt="ciudad de Paris" class="section-vuelos__gallery-img">
                 <h2 class="section-vuelos__gallery-title">Paris</h2>
             </div>
-            <div class="section-vuelos__gallery-item">
+            <div class="section-vuelos__gallery-item"data-aos="zoom-in">
                 <img src="../img/tokyo.jpg" alt="ciudad de Tokyo" class="section-vuelos__gallery-img">
                 <h2 class="section-vuelos__gallery-title">Tokyo</h2>
             </div>
-            <div class="section-vuelos__gallery-item">
+            <div class="section-vuelos__gallery-item"data-aos="zoom-in">
                 <img src="../img/berlin.jpg" alt="ciudad de Berlin" class="section-vuelos__gallery-img">
                 <h2 class="section-vuelos__gallery-title">Berlin</h2>
             </div>
-            <div class="section-vuelos__gallery-item">
+            <div class="section-vuelos__gallery-item"data-aos="zoom-in">
                 <img src="../img/roma.jpg" alt="ciudad de Roma" class="section-vuelos__gallery-img">
                 <h2 class="section-vuelos__gallery-title">Roma</h2>
             </div>
-            <div class="section-vuelos__gallery-item">
+            <div class="section-vuelos__gallery-item"data-aos="zoom-in">
                 <img src="../img/copacavana.jpg" alt="ciudad de Copacavana" class="section-vuelos__gallery-img">
                 <h2 class="section-vuelos__gallery-title">Copacavana </h2>
             </div>
-            <div class="section-vuelos__gallery-item">
+            <div class="section-vuelos__gallery-item"data-aos="zoom-in">
                 <img src="../img/dubai.jpg" alt="ciudad de Dubai" class="section-vuelos__gallery-img">
                 <h2 class="section-vuelos__gallery-title">Dubai</h2>
             </div>
-            <div class="section-vuelos__gallery-item">
+            <div class="section-vuelos__gallery-item"data-aos="zoom-in">
                 <img src="../img/londres.jpg" alt="ciudad de Londres" class="section-vuelos__gallery-img">
                 <h2 class="section-vuelos__gallery-title">Londres</h2>
             </div>
-            <div class="section-vuelos__gallery-item">
+            <div class="section-vuelos__gallery-item"data-aos="zoom-in">
                 <img src="../img/zurich.jpg" alt="ciudad de Zurich" class="section-vuelos__gallery-img">
                 <h2 class="section-vuelos__gallery-title">Zurich</h2>
             </div>
-            <div class="section-vuelos__gallery-item">
+            <div class="section-vuelos__gallery-item"data-aos="zoom-in">
                 <img src="../img/newyork.jpg" alt="ciudad de NewYork" class="section-vuelos__gallery-img">
                 <h2 class="section-vuelos__gallery-title">NewYork</h2>
             </div>
         
         </article>
-        <div class="section-vuelos__titulos">
+        <div class="section-vuelos__titulos"data-aos="fade-right">
             <h1>Consultas</h1>
             <div class="line"></div>
         </div>
@@ -180,7 +178,7 @@
         <form class="section-vuelos__form"> 
             <div class="calendario">
                 <table class="calendario">
-                    <div class="section-vuelos__titulos">
+                    <div class="section-vuelos__titulos"data-aos="fade-down">
                         <h5>Fechas Disponibles</h5>
                         <div class="line"></div>
                     </div>
@@ -189,7 +187,7 @@
                 <br>
                 <button type="submit" class="btn__l" input type="submit" value="Reservar ">Reservar</button>
             </div>
-            <div class="section-vuelos__titulos">
+            <div class="section-vuelos__titulos"data-aos="fade-down">
                 <h5>Destinos Disponibles</h5>
                 <div class="line"></div>
             </div>
@@ -209,7 +207,7 @@
                 <button type="submit" class="btn__l" input type="submit" value="Seleccionar ">Seleccionar</button>
                 <button type="reset" class="btn__l"  value="Pasajeros">Pasajeros</button>
             <br>
-            <div class="section-vuelos__titulos">
+            <div class="section-vuelos__titulos"data-aos="fade-down">
                 <h5>Metodo de pago</h5>
                 <div class="line"></div>
             </div>
@@ -228,15 +226,15 @@
         </form>
         <hr>
 <!-------seccion-videos------>
-        <article class="section-vuelos__videos">
+        <article class="section-vuelos__videos"data-aos="flip-left">
             <div class="ratio ratio-16x9">
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PSbnH-dNq2g" title="✈️ Países BARATOS para VIAJAR ⭐️ TOP 15 Destinos Económicos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
             </div>
-            <div class="section-vuelos__titulos">
+            <div class="section-vuelos__titulos"data-aos="fade-down">
                 <h1>TOP 10 Lugares</h1>
                 <div class="line"></div>
             </div>
-            <div class="ratio ratio-16x9" >
+            <div class="ratio ratio-16x9"data-aos="flip-left" >
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2Xz65_767Gg" title="¡Top 10 Lugares Más BELLOS del MUNDO!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div> 
         </article>
@@ -254,6 +252,8 @@
         <p class="footer__p">SpecialTravel 2022-2023 | Diseñado por JDAVILA - Todos los derechos reservados.</p>
     </div>
 </footer>
+<!------Script AOS------>
+<script> AOS.init();</script>
 <!------Script JS------->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
@@ -266,7 +266,7 @@
 .main__vuelos
 .section-vuelos
 .section-vuelos__titulos
-.section-vuelos__banner1
+data-aos="fade-down".section-vuelos__banner1
 .section-vuelos__card
 .section-vuelos__card-destinos
 .section-vuelos__gallery

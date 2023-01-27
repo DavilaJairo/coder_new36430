@@ -8,6 +8,10 @@
     <!--bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
 
@@ -20,7 +24,7 @@
 <body class="body">
 <!------publicidad----->
 <div class="body__info">  
-    <p class="body__p">SpecialTravel Tu Mejor Opcion Para Vivir Tu Sueño...</p>
+    <p class="body__p slide-in-blurred-right">SpecialTravel Tu Mejor Opcion Para Vivir Tu Sueño...</p>
 </div>
 <!--------NavBar------->
 <navbar class="navbar" >
@@ -59,9 +63,9 @@
 <!--------portada------>
 <header class="header">
     <div class=header__content>
-        <h2 class="header__h2">Live Your Dreams</h2>
+        <h2 class="header__h2 tracking-in-contract">Live Your Dreams</h2>
         <div class="line"></div>
-        <h1 class="header__h1">Welcome To SpecialTravel</h1>
+        <h1 class="header__h1 tracking-in-contract">Welcome To SpecialTravel</h1>
         <a class="btn__l" href="#">Learn More</a>
     </div>
 </header>
@@ -70,21 +74,21 @@
 <!---seccion-eventos--->
 <section class="section">
     <article class="section__article">
-        <div class="section__titulos">
+        <div class="section__titulos "data-aos="fade-down">
             <h1>Proximos Eventos</h1>
             <div class="line"></div>
         </div>
         <div class="section__item">
-            <div class="section__col">
+            <div class="section__col"data-aos="zoom-in-down">
                 <img src="./img/senderismo11.jpg" alt="senderismo" class="responsive-img">
                 <h4 class="section__h4">Senderismo</h4>
-                <p class="section__ph4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo.</p>
+                <p class="section__ph4">es una experiencia muy agradable. Te conecta con la naturaleza, te permite conocer personas nuevas, realizar actividades muy placenteras, a la par que relajarte y disfrutar del aire fresco.</p>
                 <a href="#" class="btn__l">Learn More</a>
             </div>
-            <div class="section__col">
+            <div class="section__col"data-aos="zoom-in-down">
                 <img src="./img/fogata .jpg" alt="fogata en la noche" class="responsive-img" >
                 <h4 class="section__h4">Camping</h4>
-                <p class="section__ph4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo.</p>
+                <p class="section__ph4">Ir de camping tiene muchos beneficios no solo para tu cuerpo sino también para tu mente. Se trata de una experiencia muy agradable con múltiples ventajas para tu salud.</p>
                 <a href="#" class="btn__l">Learn More</a>
             </div>
         </div>
@@ -93,16 +97,19 @@
 </main>
 <!-------Footer-------->
 <footer class="footer">
-        <div class="footer__redes">
+    <div class="footer__redes">
             <a class="footer__a" href="#"><img class="footer__item" src="./img/facebook_icon-icons.com_53612.svg" alt="logo de facebook"></a>
             <a class="footer__a" href="#"><img class="footer__item" src="./img/instagram.svg" alt="logo de instagram"></a>
             <a class="footer__a" href="#"><img class="footer__item" src="./img/twitter.png" alt="logo de twitter"></a>
             <a class="footer__a" href="#"><img class="footer__item" src="./img/whatsapp.svg" alt="logo de whatsapp"></a>
-        </div>
-        <div class="footer__Texto">
-            <p class="footer__p">SpecialTravel 2022-2023 | Diseñado por JDAVILA - Todos los derechos reservados.</p>
-        </div>
+    </div>
+    <div class="footer__Texto">
+    <p class="footer__p">SpecialTravel 2022-2023 | Diseñado por JDAVILA - Todos los derechos reservados.</p>
+    </div>
 </footer>
+
+<!------Script AOS------>
+<script> AOS.init();</script>
 <!------Script JS------>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
@@ -134,3 +141,4 @@
 .footer__Texto
 .footer__p
 -->
+

@@ -8,6 +8,10 @@
     <!--bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
 
@@ -20,7 +24,7 @@
 <body>
 <!------publicidad----->
 <div class="body__info">
-    <p class="body__p">SpecialTravel la Mejor Opcion Para Vivir Tu Sueño</p>
+    <p class="body__p slide-in-blurred-right">SpecialTravel la Mejor Opcion Para Vivir Tu Sueño</p>
 </div>
 <!------NavBar----->
 <navbar class="navbar" >
@@ -89,13 +93,13 @@
 
 <!---seccion-actividades--->
     <article class="section-actividades__paseos">
-        <div class="section-actividades__titulos">
+        <div class="section-actividades__titulos focus-in-contract ">
             <h2>Paseos En Bicis</h2>
             <div class="line"></div>
         </div>
         <section class="section-actividades__paseos-card">
 <!-----seccion-card-------->
-            <div class="section-actividades__paseoscard-item" style="width: 17rem;">
+            <div class="section-actividades__paseoscard-item" style="width: 17rem;" data-aos="flip-left">
                 <img src="../img/ciclismo.jpg" class="card-img-top" alt="imagen de ciclismo"></a>
                 <div class="card-body">
                     <p class="card-text">Las actividades recreativas, han adquirido, en los últimos años, una importancia esencial para cualquier sociedad, a partir de sus potencialidades para el desarrollo y perfeccionamiento de la vida humana.</p>
@@ -104,7 +108,7 @@
                 </div>
             </div>
 <!-----seccion-card-------->
-            <div class="section-actividades__paseoscard-item" style="width: 17rem;">
+            <div class="section-actividades__paseoscard-item" style="width: 17rem;" data-aos="flip-left">
                 <img src="../img/mountain-bike.jpg" class="card-img-top" alt="imagen de ciclismo">
                 <div class="card-body">
                     <p class="card-text">Al montar en bicicleta permites que tus rodillas y demás articulaciones descansen, ya que no tienen que aguantar el peso del cuerpo, que recae principalmente sobre el sillín cada vez más personas dejan de lado el coche para usar su bicicleta.</p>
@@ -113,7 +117,7 @@
                 </div>
             </div>
 <!-----seccion-card-------->
-            <div class="section-actividades__paseoscard-item" style="width: 17rem;">
+            <div class="section-actividades__paseoscard-item" style="width: 17rem;" data-aos="flip-left">
                 <img src="../img/familybike.jpg" class="card-img-top" alt="imagen de ciclismo">
                 <div class="card-body">
                     <p class="card-text">también sirve de medio para desarrollar conocimientos, habilidades, hábitos, cualidades y provocar emociones, mediante una participación activa y afectiva de los sujetos, por lo que la formación de la personalidad se transforma en una experiencia feliz..</p>
@@ -126,22 +130,22 @@
 
 <!------seccion-resort------>
     <article  class="section-actividades__resort">
-        <div class="section-actividades__titulos">
+        <div class="section-actividades__titulos focus-in-contract ">
             <h2>Resort</h2>
             <div class="line"></div>
         </div>
 <!-------seccion-banner------>
         <div class="section-actividades__resort-banner1">
             <div class=banner__info>
-                <h2 class="banner__subtitulo">Live Your Dreams</h2>
+                <h2 class="banner__subtitulo tracking-in-contract">Live Your Dreams</h2>
                 <div class="line"></div>
-                <h1 class="banner__titulo">Welcome To SpecialTravel</h1>
+                <h1 class="banner__titulo tracking-in-contract">Welcome To SpecialTravel</h1>
                 <a class="btn__l" href="#">Learn More</a>
             </div>
         </div>
 <!-----------card------------->
         <div class="section-actividades__resort-card">
-            <div class="section-actividades__resortcardr-item" style="width: 18rem;">
+            <div class="section-actividades__resortcardr-item" style="width: 18rem;" data-aos="zoom-in">
                 <img src="../img/nadar1.jpg" class="card-img-top" alt="Resort Santa Lucía">
                 <div class="card-body">
                 <h5 class="card-title">Resort Santa Lucía</h5>
@@ -151,7 +155,7 @@
             </div>
             </div>
 <!-----------card------------->
-            <div class="section-actividades__resortcardr-item" style="width: 18rem;">
+            <div class="section-actividades__resortcardr-item" style="width: 18rem;" data-aos="zoom-in">
                 <img src="../img/nadar2.jpg" class="card-img-top" alt=" Las Maldivas">
                 <div class="card-body">
                 <h5 class="card-title"> Las Maldivas</h5>
@@ -161,7 +165,7 @@
             </div>
             </div>
 <!-----------card------------->
-            <div class="section-actividades__resortcardr-item" style="width: 18rem;">
+            <div class="section-actividades__resortcardr-item" style="width: 18rem;" data-aos="zoom-in">
                 <img src="../img/nadar3.jpg" class="card-img-top" alt="Suite de aguas">
                 <div class="card-body">
                 <h5 class="card-title">Suite de agua</h5>
@@ -175,7 +179,7 @@
 
 <!---seccion-excursiones----->
     <article class="section-actividades__excursiones">
-        <div class="section-actividades__titulos">
+        <div class="section-actividades__titulos focus-in-contract ">
             <h2>Excursiones al aire libre</h2>
             <div class="line"></div>
         </div>
@@ -183,7 +187,7 @@
             <p class="contenedor__p">Como en cualquier deporte, practicando senderismo nos ponemos en forma, y al no ser un deporte de altas exigencias, en cada excursión nos podemos ir marcando unas metas que harán que vaya mejorando nuestro estado físico, nuestra resistencia y nuestra capacidad pulmonar. Al ser un deporte aeróbico en el que se activa la circulación, es un ejercicio ideal para prevenir enfermedades cardíacas, y para disminuir la tensión arterial. Además, ayuda a mejorar los niveles de colesterol y la diabetes.</p>
         </div>
 <!-------seccion-banner------>
-        <div class="section-actividades__excursiones-banner1">
+        <div class="section-actividades__excursiones-banner1 tracking-in-contract">
             <div class=banner__info>
                 <h2 class="banner__subtitulo">Live Your Dreams</h2>
                 <div class="line"></div>
@@ -194,7 +198,7 @@
 <!-----------card------------->
         <div class="section-actividades__excursiones-card">
 <!-----------card------------->
-            <div class="section-actividades__excursionescardr-item" style="width: 17rem;">
+            <div class="section-actividades__excursionescardr-item" style="width: 17rem;" data-aos="fade-down">
                         <img src="../img/senderismo2.jpg" class="card-img-top" alt="imagen de senderismo2 ">
                         <div class="card-body">
                                 <p class="card-text">El senderismo suele estar considerado como una actividad más relajante, mientras que el excursionismo se asocia con una mayor demanda física.  Además de esta diferencia, el trekking se suele combinar con otras actividades naturales, como la acampada.</p>
@@ -203,7 +207,7 @@
                         </div>
             </div>
 <!-----------card------------->
-            <div class="section-actividades__excursionescardr-item" style="width: 17rem;">
+            <div class="section-actividades__excursionescardr-item" style="width: 17rem;" data-aos="fade-right">
                         <img src="../img/senderismo20.jpg" class="card-img-top" alt="imagen de senderismo">
                         <div class="card-body">
                                 <p class="card-text">Inicia la actividad a una hora prudente.
@@ -232,6 +236,9 @@
         <p class="footer__p">SpecialTravel 2022-2023 | Diseñado por JDAVILA - Todos los derechos reservados.</p>
     </div>
 </footer>
+
+<!------Script AOS------>
+<script> AOS.init();</script>
 <!------Script JS------->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
@@ -240,13 +247,12 @@
 <!-- "METODOLOGIA BEM" 
 main__actividades
 section-actividades
-section-actividades__titulos
+section-actividades__titulos focus-in-contract 
 section-actividades__paseos
 section-actividades__resort
 section-actividades__resort-banner1
 section-actividades__resort-card
 
 section-actividades__excursiones
-
 
 -->
