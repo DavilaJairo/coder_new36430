@@ -145,8 +145,9 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 
 /*-----------------Funciones/ vistas-------------------*/
 .contenedor__p{
-    text-align: justify;
+    text-align: initial;
     padding: 2rem;
+    font-weight: bolder;
 }
 .banner__info{
     margin-bottom: 150px;
@@ -706,7 +707,7 @@ main{
     font-size: 0.5rem;
 }
 .header {
-    width: 99vw;
+    width: 100vw;
     height: 80vh;
 }
 .banner__titulo {
@@ -756,7 +757,7 @@ main{
     color: whitesmoke;
 }
 .contenedor__p {
-    text-align: justify;
+    text-align: initial;
     padding: 1rem;
 }
 .excursiones__card {
