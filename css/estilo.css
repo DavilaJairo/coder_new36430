@@ -62,7 +62,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
     border: var(--bs-border-width) solid rgb(0 0 0 / 13%);
 }
 .header{
-    width: 100vw;
+    width: 98.7vw;
     height: 100vh;
     background-image: url(../img/bannerp.jpg);
     background-position: bottom;
@@ -513,7 +513,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 @media screen and (max-width:1025px){
 /*------------------------index-----------------------------*/
 .header {
-    width: 99.5vw;
+    width: 100vw;
     height: 100vh;
 }
 .navbar-brand {
@@ -538,9 +538,9 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 @media screen and (max-width:769px) {
 /*------------------------index-----------------------------*/
 .header {
-        width: 98vw;
-        height: 100vh;
-        overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 .navbar-brand {
     color: rgb(255 255 255);
@@ -590,7 +590,7 @@ element.style {
     margin-bottom: 2rem;
 }
 .header {
-    width: 97vw;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
