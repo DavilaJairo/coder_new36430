@@ -1,0 +1,63 @@
+.section-vuelos {
+    &__titulos {
+        text-align: center;
+        font-size: 4vmin;
+        color: #667183;
+        margin-bottom: 2rem;
+        margin-top: 2rem; }
+    
+    &__banner1 {
+        width: 90vw;
+        height: 110vh;
+        background-image: url(../img/vuelosbanner2.jpg);
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; }
+    
+    &__card {
+        display: flex;
+        justify-content: space-evenly; }
+    
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 257px;
+        padding: 8px;
+        padding-top: 6rem;
+        gap: 5px; 
+    }
+    &__gallery-item {
+        position: relative; }
+
+    &__gallery-title {
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        background: linear-gradient(348deg, black, transparent);
+        width: 100%;
+        margin: 0;
+        padding: 10px; }
+
+    &__gallery-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+    &__gallery-item:nth-child(4) {
+        grid-column-start: span 2; }
+
+    &__gallery-item:nth-child(9) {
+        grid-column-start: span 3; }
+    &__form {
+        background: #000000e0;
+        border: 5px black solid;
+        width: -webkit-fill-available;
+        display: inline-block; }
+    
+    &__videos {
+        padding: 10rem;
+        padding-top: 1rem; }
+
+}

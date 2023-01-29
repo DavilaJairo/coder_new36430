@@ -1,0 +1,46 @@
+
+.section-actividades {
+    &__titulos {
+        text-align: center;
+        font-size: 4vmin;
+        color: #667183;
+        margin-bottom: 2rem;
+        margin-top: 2rem; }
+    
+    &__paseos-card {
+        display: flex;
+        justify-content: space-between; }
+    
+    &__resort-banner1 {
+        width: 90vw;
+        height: 110vh;
+        background-image: url(../img/banner-nadar.jpg);
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; }
+    
+    &__resort-card {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem; }
+    
+    &__excursiones-banner1 {
+        width: 90vw;
+        height: 110vh;
+        background-image: url(../img/banner_sendero.jpg);
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; }
+    
+    &__excursionescardr-item {
+        margin-bottom: 2rem; }
+    
+    &__excursiones-card {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem; }
+}

@@ -1,0 +1,16 @@
+.main__contactos {
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../img/cont1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: #fff;
+    overflow-x: hidden;
+    padding: 2rem;
+}

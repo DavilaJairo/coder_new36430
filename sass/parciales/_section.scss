@@ -1,0 +1,35 @@
+/*-------------------Index/eventos---------------------*/
+.section {
+    width: 80%;
+    margin: 80px auto;
+    &__titulos {
+        text-align: center;
+        font-size: 4vmin;
+        color: #667183;
+        margin-bottom: 2rem;
+        margin-top: 2rem; }
+    
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px; }
+    
+    &__col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem; }
+    
+    &__h4 {
+        color: #667183;
+        margin: 20px auto;
+        font-size: 2rem;
+        font-weight: bold; }
+    
+    &__ph4 {
+        color: #000000;
+        padding: 1rem;
+        font-size: 1rem; }
+}

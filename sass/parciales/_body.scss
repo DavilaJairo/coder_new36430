@@ -1,0 +1,17 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+
+        &__info {
+        background-color: black;
+        color: #fff;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        text-align: center; }
+
+        &__p {
+        margin-bottom: 0rem;
+        padding: 15px;
+        font-size: 0.8rem; }
+}   

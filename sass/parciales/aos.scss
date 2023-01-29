@@ -1,0 +1,50 @@
+/*--------------ANIMACIONES-----------------*/
+.tracking-in-contract {
+    -webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+@-webkit-keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0; }
+    40% {
+        opacity: 0.6; }
+    100% {
+        letter-spacing: normal;
+        opacity: 1; } }
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0; }
+    40% {
+        opacity: 0.6; }
+    100% {
+        letter-spacing: normal;
+        opacity: 1; } }
+
+/* ----------------------------------------*/
+.focus-in-contract {
+    -webkit-animation: focus-in-contract 1s 1s;
+    animation: focus-in-contract 1s 1s; }
+
+@-webkit-keyframes focus-in-contract {
+    0% {
+        letter-spacing: 1em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0; }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1; } }
+
+@keyframes focus-in-contract {
+    0% {
+        letter-spacing: 1em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0; }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1; } }

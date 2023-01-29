@@ -1,0 +1,35 @@
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #212529;
+    padding: 0px;
+
+    .navbar-expand-lg.bg-body-tertiary {
+        background-color: transparent !important; }
+    
+    .nav-link {
+        --bs-nav-link-color: #fff; }
+
+    .navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+    padding-right: 31rem;}
+
+    .navbar-brand:hover {
+        color: #821539; }
+    
+    .nav-link:hover {
+        color: #821539; }
+    
+    .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+        color: #ff0d5d; }
+    
+    .navbar-toggler {
+        color: #343a40;
+        background-color: #b02a37;
+        border: var(--bs-border-width) solid #000000; }
+}

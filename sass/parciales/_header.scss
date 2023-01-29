@@ -1,0 +1,27 @@
+
+.header {
+    width: 98.7vw;
+    height: 100vh;
+    background-image: url(../img/bannerp.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+
+    &__content {
+        margin-bottom: 150px;
+        color: whitesmoke;
+        text-align: center; }
+
+    &__h1 {
+        font-size: 7vmin;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    &__h2 {
+        font-size: 4vmin; 
+    }
+}

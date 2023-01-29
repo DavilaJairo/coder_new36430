@@ -1,0 +1,51 @@
+
+.section-contactos {
+    &__titulos {
+        text-align: center;
+        font-size: 4vmin;
+        color: whitesmoke;
+        margin-bottom: 2rem;
+        margin-top: 2rem; }
+    
+    &__form {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &__mb-3 {
+            width: 400px; }
+    }
+    
+    &__maps {
+        padding-top: 2rem;
+        margin-bottom: 2rem; }
+    
+    &__consultas {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 3rem;}
+
+    &__pregunta {
+        color: #ff0d5d;
+        font-weight: bolder;
+        font-size: 2rem; }
+    
+    &__ul :hover {
+        color: #ff0d5d; }
+
+    &__ul {
+        list-style: none;
+        padding: 0; }
+
+    &__li {
+        text-decoration: none;
+        color: white; }
+
+}

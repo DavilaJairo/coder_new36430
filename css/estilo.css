@@ -437,7 +437,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 .form__vuelos {
     padding: 2rem;
 }
-form.section-vuelos__form {
+.section-vuelos__form {
     background: #000000e0;
     border: 5px black solid;
     width: -webkit-fill-available;
