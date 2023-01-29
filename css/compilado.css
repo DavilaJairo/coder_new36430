@@ -27,21 +27,21 @@
   justify-content: space-around;
   background-color: #212529;
   padding: 0px; }
-  .navbar .navbar-expand-lg.bg-body-tertiary {
+  .navbar-expand-lg.bg-body-tertiary {
     background-color: transparent !important; }
   .navbar .nav-link {
     --bs-nav-link-color: #fff; }
-  .navbar .navbar-brand {
+  .navbar-brand {
     color: #fff;
     font-size: 2rem;
     padding-right: 31rem; }
-  .navbar .navbar-brand:hover {
+  .navbar-brand:hover {
     color: #821539; }
   .navbar .nav-link:hover {
     color: #821539; }
-  .navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .show > .nav-link {
+  .navbar-nav .nav-link.active, .navbar .navbar-nav .show > .nav-link {
     color: #ff0d5d; }
-  .navbar .navbar-toggler {
+  .navbar-toggler {
     color: #343a40;
     background-color: #b02a37;
     border: var(--bs-border-width) solid #000000; }
