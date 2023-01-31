@@ -4,8 +4,8 @@
     margin: 80px auto;
     &__titulos {
         text-align: center;
-        font-size: 4vmin;
-        color: #667183;
+        font-size: $titulo-size;
+        color: $titulo-color;
         margin-bottom: 2rem;
         margin-top: 2rem; }
     
@@ -23,13 +23,13 @@
         margin: 1rem; }
     
     &__h4 {
-        color: #667183;
+        color: $titulo-color;
         margin: 20px auto;
         font-size: 2rem;
         font-weight: bold; }
     
     &__ph4 {
-        color: #000000;
+        color: #000;
         padding: 1rem;
         font-size: 1rem; }
 }

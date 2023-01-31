@@ -1,12 +1,13 @@
-/*-----------------Funciones/ vistas-------------------*/
+/*-----------------Utilitarios-------------------*/
 .contenedor__p {
     text-align: initial;
     padding: 2rem;
-    font-weight: bolder; }
+    font-weight: bolder;
+    font-size: $parrafo-size; }
 
 .banner__info {
     margin-bottom: 150px;
-    color: whitesmoke;
+    color: #fff;
     text-align: center; }
 
 .banner__subtitulo {
@@ -20,22 +21,22 @@
 .titulos {
     text-align: center;
     font-size: 4vmin;
-    color: #667183;
+    color: #000;
     margin-bottom: 2rem;
     margin-top: 2rem; }
 
 .line {
     width: 150px;
     height: 4px;
-    background: #ff0d5d;
+    background:$btn-line;
     margin: 10px auto;
     border-radius: 5px; }
 .btn__l {
     text-decoration: none;
     padding: 8px 15px;
-    background: #ff0d5d;
+    background: $btn1-color;
     border-radius: 30px;
-    color: whitesmoke; }
+    color: $btn1-letra-color; }
 .responsive-img {
     width: 100%;
     height: auto;}

@@ -1,3 +1,14 @@
+:root {
+  /* Paleta de colores */
+  color: #000;
+  color: #343a40;
+  color: #64606066;
+  color: #fff;
+  color: #ff0d5d;
+  color: #821539;
+  color: #b02a37;
+  color: #667183; }
+
 /*-------reset------*/
 * {
   margin: 0;
@@ -9,7 +20,7 @@
   flex-direction: column;
   font-family: 'Raleway', sans-serif; }
   .body__info {
-    background-color: black;
+    background-color: #000;
     color: #fff;
     padding-top: 20px;
     padding-bottom: 0px;
@@ -19,6 +30,7 @@
     padding: 15px;
     font-size: 0.8rem; }
 
+/*--------------------navegacion------------------------*/
 .navbar {
   position: relative;
   display: flex;
@@ -36,7 +48,7 @@
     font-size: 2rem;
     padding-right: 31rem; }
   .navbar-brand:hover {
-    color: #821539; }
+    color: #ff0d5d; }
   .navbar .nav-link:hover {
     color: #821539; }
   .navbar-nav .nav-link.active, .navbar .navbar-nav .show > .nav-link {
@@ -46,6 +58,7 @@
     background-color: #b02a37;
     border: var(--bs-border-width) solid #000000; }
 
+/*-------------------Index/Portada----------------------*/
 .header {
   width: 98.7vw;
   height: 100vh;
@@ -58,7 +71,7 @@
   overflow: hidden; }
   .header__content {
     margin-bottom: 150px;
-    color: whitesmoke;
+    color: #fff;
     text-align: center; }
   .header__h1 {
     font-size: 7vmin;
@@ -73,7 +86,7 @@
   margin: 80px auto; }
   .section__titulos {
     text-align: center;
-    font-size: 4vmin;
+    font-size: 5vmin;
     color: #667183;
     margin-bottom: 2rem;
     margin-top: 2rem; }
@@ -94,19 +107,20 @@
     font-size: 2rem;
     font-weight: bold; }
   .section__ph4 {
-    color: #000000;
+    color: #000;
     padding: 1rem;
     font-size: 1rem; }
 
-/*-----------------Funciones/ vistas-------------------*/
+/*-----------------Utilitarios-------------------*/
 .contenedor__p {
   text-align: initial;
   padding: 2rem;
-  font-weight: bolder; }
+  font-weight: bolder;
+  font-size: 1.5rem; }
 
 .banner__info {
   margin-bottom: 150px;
-  color: whitesmoke;
+  color: #fff;
   text-align: center; }
 
 .banner__subtitulo {
@@ -120,7 +134,7 @@
 .titulos {
   text-align: center;
   font-size: 4vmin;
-  color: #667183;
+  color: #000;
   margin-bottom: 2rem;
   margin-top: 2rem; }
 
@@ -136,7 +150,7 @@
   padding: 8px 15px;
   background: #ff0d5d;
   border-radius: 30px;
-  color: whitesmoke; }
+  color: #fff; }
 
 .responsive-img {
   width: 100%;
@@ -197,7 +211,7 @@
 /*-----------------------footer-------------------------*/
 .footer {
   font-size: 0.8rem;
-  background-color: black;
+  background-color: #000;
   color: #fff;
   text-align: center;
   padding: 1px;
@@ -211,22 +225,23 @@
   .footer__redes:hover {
     color: #ff0d5d; }
 
+/*-----------------ACTIVIDADES/estilos-----------------*/
 .main__actividades {
   font-family: 'Raleway', sans-serif;
-  background-color: white;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   text-align: center;
   font-weight: bolder;
   font-size: 1rem;
-  color: black;
+  color: #000;
   overflow-x: hidden;
   width: 90%;
   margin: 80px auto; }
 
 .section-actividades__titulos {
   text-align: center;
-  font-size: 4vmin;
+  font-size: 5vmin;
   color: #667183;
   margin-bottom: 2rem;
   margin-top: 2rem; }
@@ -268,17 +283,18 @@
   justify-content: space-evenly;
   margin: 2rem; }
 
+/*-----------------ALOJAMIENTO/estilos-----------------*/
 .main__aloja {
   font-family: 'Raleway', sans-serif;
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   overflow-x: hidden;
   width: 90%;
   margin: 10px auto; }
 
 .section-aloja__titulos {
   text-align: center;
-  font-size: 4vmin;
+  font-size: 5vmin;
   color: #667183;
   margin-bottom: 2rem;
   margin-top: 2rem; }
@@ -308,10 +324,11 @@
   position: absolute;
   bottom: 0;
   color: #fff;
-  background: linear-gradient(348deg, black, transparent);
+  background: linear-gradient(2deg, #000, transparent);
   width: 100%;
   margin: 0;
-  padding: 10px; }
+  padding: 10px;
+  font-size: 1rem; }
 
 .section-aloja__gallery-img {
   width: 100%;
@@ -325,10 +342,13 @@
   grid-column-start: span 3; }
 
 .section-aloja__info {
+  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
-  background-color: #cfcbcb;
-  border-radius: 3rem; }
+  background: linear-gradient(1deg, #64606066, transparent);
+  color: #000;
+  border-radius: 1rem; }
 
+/*-------------------VUELOS/estilos---------------------*/
 .main__vuelos {
   font-family: 'Raleway', sans-serif;
   background-color: white;
@@ -342,7 +362,7 @@
 
 .section-vuelos__titulos {
   text-align: center;
-  font-size: 4vmin;
+  font-size: 5vmin;
   color: #667183;
   margin-bottom: 2rem;
   margin-top: 2rem; }
@@ -402,6 +422,7 @@
   padding: 10rem;
   padding-top: 1rem; }
 
+/*-------------------CONTACTOS/estilos------------------*/
 .main__contactos {
   font-family: 'Raleway', sans-serif;
   background-image: url(../img/cont1.jpg);
@@ -420,7 +441,7 @@
 
 .section-contactos__titulos {
   text-align: center;
-  font-size: 4vmin;
+  font-size: 5vmin;
   color: whitesmoke;
   margin-bottom: 2rem;
   margin-top: 2rem; }
@@ -575,10 +596,13 @@
     margin: 2rem;
     flex-direction: column;
     align-items: center; }
+  .contenedor__p {
+    text-align: justify;
+    padding: 1rem;
+    font-size: 1rem; }
   /*--------------------media queries/alojamiento--------------*/
   .section-aloja__info {
     font-size: 0.5rem;
-    background-color: #cfcbcb;
     border-radius: 1rem; }
   .section-aloja__gallery-title {
     font-size: calc(1rem + .9vw); }
@@ -659,10 +683,11 @@
     padding: 3px 8px;
     background: #ff0d5d;
     border-radius: 30px;
-    color: whitesmoke; }
+    color: #fff; }
   .contenedor__p {
     text-align: initial;
-    padding: 1rem; }
+    padding: 1rem;
+    font-size: 1rem; }
   .excursiones__card {
     display: flex;
     justify-content: center;
@@ -720,7 +745,6 @@
   .section-aloja__info {
     font-size: 0.5rem;
     margin: 0rem;
-    background-color: #cfcbcb;
     border-radius: 3rem; }
   .section-aloja__gallery-title {
     font-size: calc(1rem + .2vw); } }

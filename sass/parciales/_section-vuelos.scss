@@ -1,8 +1,8 @@
 .section-vuelos {
     &__titulos {
         text-align: center;
-        font-size: 4vmin;
-        color: #667183;
+        font-size: $titulo-size;
+        color: $titulo-color;
         margin-bottom: 2rem;
         margin-top: 2rem; }
     

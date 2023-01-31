@@ -1,11 +1,11 @@
-
+/*--------------------navegacion------------------------*/
 .navbar {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: #212529;
+    background-color: $navbar-background;
     padding: 0px;
 
     &-expand-lg.bg-body-tertiary {
@@ -15,18 +15,18 @@
         --bs-nav-link-color: #fff; }
 
     &-brand {
-    color: #fff;
+    color: $navbar-color;
     font-size: 2rem;
     padding-right: 31rem;}
 
     &-brand:hover {
-        color: #821539; }
+        color: $navbar-hover; }
     
     .nav-link:hover {
         color: #821539; }
     
     &-nav .nav-link.active, .navbar-nav .show > .nav-link {
-        color: #ff0d5d; }
+        color: $nav-link-active; }
     
     &-toggler {
         color: #343a40;

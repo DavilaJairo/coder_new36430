@@ -2,8 +2,8 @@
 .section-aloja {
     &__titulos {
         text-align: center;
-        font-size: 4vmin;
-        color: #667183;
+        font-size: $titulo-size;
+        color: $titulo-color;
         margin-bottom: 2rem;
         margin-top: 2rem; }
     
@@ -32,10 +32,11 @@
         position: absolute;
         bottom: 0;
         color: #fff;
-        background: linear-gradient(348deg, black, transparent);
+        background: linear-gradient(2deg, #000, transparent);
         width: 100%;
         margin: 0;
-        padding: 10px; }
+        padding: 10px;
+        font-size: 1rem; }
     
     &__gallery-img {
         width: 100%;
@@ -49,8 +50,10 @@
         grid-column-start: span 3; }
     
     &__info {
+        font-family: 'Raleway', sans-serif;
         font-size: 1rem;
-        background-color: #cfcbcb;
-        border-radius: 3rem; }
+        background: linear-gradient(1deg, $aloja-info, transparent);
+        color: #000;
+        border-radius: 1rem; }
 
 }
