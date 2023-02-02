@@ -1,6 +1,6 @@
 /*-------------------Index/Portada----------------------*/
 .header {
-    width: 98.7vw;
+    width: 100%;
     height: 100vh;
     background-image: url(../img/bannerp.jpg);
     background-position: bottom;
@@ -8,7 +8,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    overflow: hidden;
+    //overflow: hidden;
 
     &__content {
         margin-bottom: 150px;

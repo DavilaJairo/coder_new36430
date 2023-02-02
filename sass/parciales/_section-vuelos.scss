@@ -32,6 +32,7 @@
         position: relative; }
 
     &__gallery-title {
+        font-size: 3vmin;
         position: absolute;
         bottom: 0;
         color: #fff;
@@ -50,6 +51,7 @@
 
     &__gallery-item:nth-child(9) {
         grid-column-start: span 3; }
+    
     &__form {
         background: #000000e0;
         border: 5px black solid;
